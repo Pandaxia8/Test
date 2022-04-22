@@ -1,1 +1,167 @@
-<mxfile host="app.diagrams.net" modified="2022-04-21T09:12:20.975Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.44" version="15.8.2" etag="5P9bellYy4sYTo1XjkF4" type="github"><diagram id="b8KcUccR4RVjOLdugD2T">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-04-22T09:21:24.990Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.44" etag="Z3kSH2gE_6Tz9GMfLRu1" version="15.8.2" type="github">
+  <diagram id="b8KcUccR4RVjOLdugD2T" name="第 1 页">
+    <mxGraphModel dx="1823" dy="616" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ktU1K1ta3yQ8_33pFHhn-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ktU1K1ta3yQ8_33pFHhn-1" target="ktU1K1ta3yQ8_33pFHhn-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-430" y="210" />
+              <mxPoint x="-430" y="210" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ktU1K1ta3yQ8_33pFHhn-1" value="set_start_method&lt;br&gt;创建新线程" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="-590" y="180" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ktU1K1ta3yQ8_33pFHhn-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ktU1K1ta3yQ8_33pFHhn-2" target="ktU1K1ta3yQ8_33pFHhn-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ktU1K1ta3yQ8_33pFHhn-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ktU1K1ta3yQ8_33pFHhn-2" target="ktU1K1ta3yQ8_33pFHhn-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ktU1K1ta3yQ8_33pFHhn-2" value="get_parser()获取参数" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="-410" y="180" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ktU1K1ta3yQ8_33pFHhn-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ktU1K1ta3yQ8_33pFHhn-4" target="ktU1K1ta3yQ8_33pFHhn-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ktU1K1ta3yQ8_33pFHhn-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ktU1K1ta3yQ8_33pFHhn-4" target="ktU1K1ta3yQ8_33pFHhn-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ktU1K1ta3yQ8_33pFHhn-4" value="从config_file里面获取文件" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="-410" y="260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ktU1K1ta3yQ8_33pFHhn-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ktU1K1ta3yQ8_33pFHhn-6" target="ktU1K1ta3yQ8_33pFHhn-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ktU1K1ta3yQ8_33pFHhn-6" value="设置输入图像的文件夹路径" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-410" y="340" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ktU1K1ta3yQ8_33pFHhn-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ktU1K1ta3yQ8_33pFHhn-7" target="ktU1K1ta3yQ8_33pFHhn-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ktU1K1ta3yQ8_33pFHhn-7" value="设置锚框置信度阈值" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-410" y="420" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ktU1K1ta3yQ8_33pFHhn-14" value="../configs/quick_schedules/&lt;br&gt;retinanet_R_50_FPN_inference_acc_test.&lt;br&gt;yaml&quot;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="-660" y="265" width="240" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ktU1K1ta3yQ8_33pFHhn-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ktU1K1ta3yQ8_33pFHhn-16" target="ktU1K1ta3yQ8_33pFHhn-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ktU1K1ta3yQ8_33pFHhn-16" value="设置权重文件路径" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="-410" y="500" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ktU1K1ta3yQ8_33pFHhn-18" value="加入权重文件的路径&lt;br&gt;--opts MODEL.WEIGHTS models/model_final_f10217.pkl" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="-740" y="500" width="320" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ktU1K1ta3yQ8_33pFHhn-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ktU1K1ta3yQ8_33pFHhn-20" target="ktU1K1ta3yQ8_33pFHhn-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ktU1K1ta3yQ8_33pFHhn-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ktU1K1ta3yQ8_33pFHhn-20" target="ktU1K1ta3yQ8_33pFHhn-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ktU1K1ta3yQ8_33pFHhn-20" value="setup_cfg()设置cfg文件变量" style="whiteSpace=wrap;html=1;rounded=1;strokeColor=#d79b00;fillColor=#ffe6cc;" vertex="1" parent="1">
+          <mxGeometry x="-210" y="180" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ktU1K1ta3yQ8_33pFHhn-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ktU1K1ta3yQ8_33pFHhn-23" target="ktU1K1ta3yQ8_33pFHhn-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ktU1K1ta3yQ8_33pFHhn-23" value="从detectron2/config/defualts.py中导入默认配置" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-240" y="265" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ktU1K1ta3yQ8_33pFHhn-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ktU1K1ta3yQ8_33pFHhn-28" target="ktU1K1ta3yQ8_33pFHhn-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ktU1K1ta3yQ8_33pFHhn-28" value="融合config_file文件中的配置&lt;br&gt;主要设置权重文件位置，测试数据集" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="-240" y="350" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ktU1K1ta3yQ8_33pFHhn-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ktU1K1ta3yQ8_33pFHhn-30" target="ktU1K1ta3yQ8_33pFHhn-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ktU1K1ta3yQ8_33pFHhn-30" value="融合opts中的配置，主要是设置权重文件" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="-240" y="430" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ktU1K1ta3yQ8_33pFHhn-32" value="设置ROI_HEADS的置信度" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="-240" y="510" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ktU1K1ta3yQ8_33pFHhn-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ktU1K1ta3yQ8_33pFHhn-34" target="ktU1K1ta3yQ8_33pFHhn-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ktU1K1ta3yQ8_33pFHhn-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ktU1K1ta3yQ8_33pFHhn-34" target="ktU1K1ta3yQ8_33pFHhn-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ktU1K1ta3yQ8_33pFHhn-34" value="获取可视化类&lt;br&gt;VisualizationDemo(cfg)" style="whiteSpace=wrap;html=1;rounded=1;strokeColor=#d79b00;fillColor=#ffe6cc;" vertex="1" parent="1">
+          <mxGeometry x="-10" y="180" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ktU1K1ta3yQ8_33pFHhn-39" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ktU1K1ta3yQ8_33pFHhn-36" target="ktU1K1ta3yQ8_33pFHhn-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ktU1K1ta3yQ8_33pFHhn-36" value="detectron2/engine/defaults.py&lt;br&gt;调用DefaultPredictor(cfg)&lt;br&gt;传入模型名称" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-37.5" y="265" width="185" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ktU1K1ta3yQ8_33pFHhn-48" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ktU1K1ta3yQ8_33pFHhn-38" target="ktU1K1ta3yQ8_33pFHhn-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ktU1K1ta3yQ8_33pFHhn-38" value="cfg.MODEL.META_ARCHITECTURE&lt;br&gt;来获取detectron2中的模型" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-48.75" y="350" width="207.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ktU1K1ta3yQ8_33pFHhn-43" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ktU1K1ta3yQ8_33pFHhn-40" target="ktU1K1ta3yQ8_33pFHhn-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ktU1K1ta3yQ8_33pFHhn-40" value="读取img" style="whiteSpace=wrap;html=1;rounded=1;strokeColor=#d79b00;fillColor=#ffe6cc;" vertex="1" parent="1">
+          <mxGeometry x="200" y="180" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ktU1K1ta3yQ8_33pFHhn-46" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ktU1K1ta3yQ8_33pFHhn-42" target="ktU1K1ta3yQ8_33pFHhn-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ktU1K1ta3yQ8_33pFHhn-62" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ktU1K1ta3yQ8_33pFHhn-42" target="ktU1K1ta3yQ8_33pFHhn-61">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ktU1K1ta3yQ8_33pFHhn-42" value="调用&lt;br&gt;demo.run_on_image(img)&lt;br&gt;获取可视化结果" style="whiteSpace=wrap;html=1;rounded=1;strokeColor=#d79b00;fillColor=#ffe6cc;" vertex="1" parent="1">
+          <mxGeometry x="410" y="180" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ktU1K1ta3yQ8_33pFHhn-52" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ktU1K1ta3yQ8_33pFHhn-45" target="ktU1K1ta3yQ8_33pFHhn-51">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="590" y="295" />
+              <mxPoint x="590" y="748" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ktU1K1ta3yQ8_33pFHhn-56" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ktU1K1ta3yQ8_33pFHhn-45" target="ktU1K1ta3yQ8_33pFHhn-55">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ktU1K1ta3yQ8_33pFHhn-45" value="调用&lt;br&gt;DefaultPredictor.__call__&lt;br&gt;返回锚框信息" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="265" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ktU1K1ta3yQ8_33pFHhn-47" value="predictor=DefaultPredictor(cfg)" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="-50" y="430" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ktU1K1ta3yQ8_33pFHhn-51" value="Instances(num_instances=3, image_height=480, image_width=640,fields=[&lt;br&gt;pred_boxes: Boxes(tensor([[301.1189, 161.8798, 340.3648, 273.0240], [161.8049, 169.6254, 202.7113, 275.7296], [184.5826, 193.2790, 218.4187, 222.6849]], device=&#39;cuda:0&#39;)), &lt;br&gt;scores: tensor([0.9451, 0.9229, 0.7936], device=&#39;cuda:0&#39;), &lt;br&gt;pred_classes: tensor([ 0,&amp;nbsp; 0, 38], device=&#39;cuda:0&#39;)])" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="25" y="700" width="480" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="ktU1K1ta3yQ8_33pFHhn-58" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ktU1K1ta3yQ8_33pFHhn-55" target="ktU1K1ta3yQ8_33pFHhn-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ktU1K1ta3yQ8_33pFHhn-55" value="调用&lt;br&gt;draw_instance_predictions" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="350" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ktU1K1ta3yQ8_33pFHhn-60" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ktU1K1ta3yQ8_33pFHhn-57" target="ktU1K1ta3yQ8_33pFHhn-59">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ktU1K1ta3yQ8_33pFHhn-57" value="visualizer类调用&lt;br&gt;overlay_instances" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="430" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ktU1K1ta3yQ8_33pFHhn-59" value="visualizer类调用&lt;br&gt;draw_box&lt;br&gt;保存实例锚框信息到fig" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="510" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ktU1K1ta3yQ8_33pFHhn-61" value="&lt;span&gt;visualizer.save&lt;br&gt;保存输出结果&lt;br&gt;&lt;/span&gt;" style="whiteSpace=wrap;html=1;rounded=1;strokeColor=#d79b00;fillColor=#ffe6cc;" vertex="1" parent="1">
+          <mxGeometry x="655" y="180" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
