@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-07-20T01:33:51.997Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49" etag="tIFBWSb1rmtSv3ce17mU" version="20.0.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-07-20T01:42:24.484Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49" etag="4ODH4pV8g27CE255cJz2" version="20.0.3" type="github">
   <diagram id="cp2CzAZKEZPghFZQ-joy" name="第 1 页">
-    <mxGraphModel dx="2031" dy="1087" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" math="0" shadow="0">
+    <mxGraphModel dx="3555" dy="1903" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -17,7 +17,7 @@
           <mxGeometry x="112.5" y="300" width="465" height="60" as="geometry" />
         </mxCell>
         <mxCell id="iZZFebuZpYIs87GABAeR-4" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;d2 modeling proposal_generator prpposal_utils.py 122&lt;br&gt;batched_nms&lt;br&gt;先计算损失，再NMS&lt;br&gt;这里的NMS有点特殊，RPN的分数是直接使用未激活的&lt;br&gt;RPN使用原本的NMS，但是ROI的使用自定义的NMS&lt;br&gt;还有一点需要强调，RPN 计算损失的时候没有NMS&lt;br&gt;&amp;nbsp;而是对带0和1标签的样本进行了损失的计算&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Tahoma;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="86" y="390" width="514" height="160" as="geometry" />
+          <mxGeometry x="88" y="390" width="514" height="160" as="geometry" />
         </mxCell>
         <mxCell id="iZZFebuZpYIs87GABAeR-7" value="RPN" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Tahoma;fontSize=27;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="315" y="50" width="60" height="30" as="geometry" />
@@ -60,6 +60,9 @@
         </mxCell>
         <mxCell id="iZZFebuZpYIs87GABAeR-22" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;ubteacher modeling roi_heads 103行&lt;br&gt;self.box_pooler&lt;br&gt;self.box_head&lt;br&gt;self.box_predictor&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Tahoma;fontStyle=1;" vertex="1" parent="1">
           <mxGeometry x="698.5" y="1580" width="470" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="iZZFebuZpYIs87GABAeR-23" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;font color=&quot;#ff6666&quot;&gt;总结一下，proposal和roi在计算损失的时候都不会用到NMS，而proposal在给roi提供proposal的时候用到了&lt;br&gt;并且teacher模型给student模型提供伪标签用到了&lt;br&gt;在模型最后的计算map时用到了&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Tahoma;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="98" y="700" width="514" height="160" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
