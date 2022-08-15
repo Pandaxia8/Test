@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-08-15T08:04:21.685Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.81 Safari/537.36 Edg/104.0.1293.54" etag="Jw9GHVc4BXNTZkX0gI-r" version="20.1.4" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-15T08:05:35.309Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.81 Safari/537.36 Edg/104.0.1293.54" etag="TShzCHvW-G-QX_r5hvGR" version="20.1.4" type="github">
   <diagram id="Jw3EdMG5oFBLl5G7wRar" name="第 1 页">
-    <mxGraphModel dx="981" dy="526" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" math="0" shadow="0">
+    <mxGraphModel dx="569" dy="305" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -22,8 +22,14 @@
         <mxCell id="pEkOY42yFZqLWtjxREkR-4" value="detectron2 modeling poolers.py 97行&lt;br&gt;return _convert_boxes_to_pooler_format(boxes, sizes)&lt;br&gt;主要是增加一个image_id信息" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="180" y="300" width="450" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="pEkOY42yFZqLWtjxREkR-6" value="detectron2 modeling poolers.py 97行&lt;br&gt;return return cat([indices[:, None], boxes], dim=1)&lt;br&gt;主要是增加一个image_id信息" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="pEkOY42yFZqLWtjxREkR-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="pEkOY42yFZqLWtjxREkR-6" target="pEkOY42yFZqLWtjxREkR-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pEkOY42yFZqLWtjxREkR-6" value="detectron2 modeling poolers.py 68行&lt;br&gt;return return cat([indices[:, None], boxes], dim=1)&lt;br&gt;主要是增加一个image_id信息" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="180" y="390" width="450" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pEkOY42yFZqLWtjxREkR-8" value="detectron2 modeling poolers.py 243行&lt;br&gt;return self.level_poolers[0](x[0], pooler_fmt_boxes)&lt;br&gt;主要是增加一个image_id信息" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="480" width="450" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
