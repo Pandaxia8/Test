@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-09-07T08:30:32.003Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.27" etag="3fbgYDnlNLgrM94O0ygL" version="20.2.8" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-07T08:31:28.446Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.27" etag="3OJsL68A5_nM2un5XN6M" version="20.2.8" type="github">
   <diagram id="kIxsnDEzaFE8jGhAG0Tv" name="第 1 页">
-    <mxGraphModel dx="2873" dy="2816" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" math="0" shadow="0">
+    <mxGraphModel dx="3570" dy="3190" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -8,13 +8,13 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="9VyTqNnY38J_3XrKxKob-1" value="train_net_da.py" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-240" y="-1010" width="140" height="50" as="geometry" />
+          <mxGeometry x="-230" y="-1820" width="140" height="50" as="geometry" />
         </mxCell>
         <mxCell id="9VyTqNnY38J_3XrKxKob-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#FF8000;" edge="1" parent="1" source="9VyTqNnY38J_3XrKxKob-3" target="9VyTqNnY38J_3XrKxKob-5">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="9VyTqNnY38J_3XrKxKob-3" value="backbone = build_backbone(cfg).to(device) 49行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;backnone 为 ResNet50 + FPN[p1-p7]&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
-          <mxGeometry x="-410" y="-940" width="387.5" height="60" as="geometry" />
+          <mxGeometry x="-400" y="-1750" width="387.5" height="60" as="geometry" />
         </mxCell>
         <mxCell id="9VyTqNnY38J_3XrKxKob-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#FF8000;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="9VyTqNnY38J_3XrKxKob-5" target="9VyTqNnY38J_3XrKxKob-7">
           <mxGeometry relative="1" as="geometry" />
@@ -22,37 +22,37 @@
         <mxCell id="9VyTqNnY38J_3XrKxKob-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#FF0000;" edge="1" parent="1" source="9VyTqNnY38J_3XrKxKob-5" target="9VyTqNnY38J_3XrKxKob-35">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="9VyTqNnY38J_3XrKxKob-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontColor=#000000;" edge="1" parent="1" source="9VyTqNnY38J_3XrKxKob-5" target="9VyTqNnY38J_3XrKxKob-40">
+        <mxCell id="9VyTqNnY38J_3XrKxKob-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#000000;" edge="1" parent="1" source="9VyTqNnY38J_3XrKxKob-5" target="9VyTqNnY38J_3XrKxKob-40">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="9VyTqNnY38J_3XrKxKob-5" value="middle_head = build_middle_head(cfg, backbone.out_channels) 53行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;建立图结构&lt;br&gt;1.映射层 2.辅助分类损失 3.注意力机制 4.亲和矩阵 5.鉴别器&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="1">
-          <mxGeometry x="-410" y="-850" width="387.5" height="60" as="geometry" />
+          <mxGeometry x="-400" y="-1660" width="387.5" height="60" as="geometry" />
         </mxCell>
         <mxCell id="9VyTqNnY38J_3XrKxKob-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#FF8000;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="9VyTqNnY38J_3XrKxKob-7" target="9VyTqNnY38J_3XrKxKob-11">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="230" y="-740" as="targetPoint" />
+            <mxPoint x="240" y="-1550" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="9VyTqNnY38J_3XrKxKob-7" value="fcos_core modeling rpn fcos graph_matching_head.py 69行&lt;br&gt;&amp;nbsp;class GModule(torch.nn.Module):" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="1">
-          <mxGeometry x="67.5" y="-850" width="325" height="60" as="geometry" />
+          <mxGeometry x="77.5" y="-1660" width="325" height="60" as="geometry" />
         </mxCell>
         <mxCell id="9VyTqNnY38J_3XrKxKob-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#FF8000;" edge="1" parent="1" source="9VyTqNnY38J_3XrKxKob-11" target="9VyTqNnY38J_3XrKxKob-13">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="9VyTqNnY38J_3XrKxKob-11" value="fcos_core modeling rpn fcos graph_matching_head.py109行&amp;nbsp;&lt;br&gt;make_prototype_evaluator(self.cfg)&lt;br&gt;&lt;font color=&quot;#ff9933&quot;&gt;主要是设置一下每个类别需要分裂成多少个原型（100个）&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="1">
-          <mxGeometry x="65" y="-760" width="330" height="60" as="geometry" />
+          <mxGeometry x="75" y="-1570" width="330" height="60" as="geometry" />
         </mxCell>
         <mxCell id="9VyTqNnY38J_3XrKxKob-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;" edge="1" parent="1" source="9VyTqNnY38J_3XrKxKob-13" target="9VyTqNnY38J_3XrKxKob-23">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="9VyTqNnY38J_3XrKxKob-13" value="fcos_core modeling rpn fcos graph_matching_head.py 116行&lt;br&gt;&amp;nbsp;self.head_in_ln = nn.Sequential&lt;br&gt;&lt;font color=&quot;#ffb366&quot;&gt;设置一下 layer_norm的结构&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="1">
-          <mxGeometry x="65" y="-665" width="330" height="60" as="geometry" />
+          <mxGeometry x="75" y="-1475" width="330" height="60" as="geometry" />
         </mxCell>
         <mxCell id="9VyTqNnY38J_3XrKxKob-17" value="&lt;div&gt;&lt;span style=&quot;color: rgb(0, 0, 0); background-color: initial;&quot;&gt;Sequential(&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&amp;nbsp; (0): Linear(in_features=256, out_features=256, bias=True)&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&amp;nbsp; (1): LayerNorm((256,), eps=1e-05, elementwise_affine=False)&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&amp;nbsp; (2): ReLU()&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&amp;nbsp; (3): Linear(in_features=256, out_features=256, bias=True)&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&amp;nbsp; (4): LayerNorm((256,), eps=1e-05, elementwise_affine=False)&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;)&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#FF9933;align=left;" vertex="1" parent="1">
-          <mxGeometry x="500" y="-695" width="350" height="120" as="geometry" />
+          <mxGeometry x="510" y="-1505" width="350" height="120" as="geometry" />
         </mxCell>
         <mxCell id="9VyTqNnY38J_3XrKxKob-22" value="" style="group" vertex="1" connectable="0" parent="1">
-          <mxGeometry x="390" y="-660" width="110" height="30" as="geometry" />
+          <mxGeometry x="400" y="-1470" width="110" height="30" as="geometry" />
         </mxCell>
         <mxCell id="9VyTqNnY38J_3XrKxKob-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#FF9933;" edge="1" parent="9VyTqNnY38J_3XrKxKob-22" source="9VyTqNnY38J_3XrKxKob-13" target="9VyTqNnY38J_3XrKxKob-17">
           <mxGeometry relative="1" as="geometry" />
@@ -64,36 +64,42 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="9VyTqNnY38J_3XrKxKob-23" value="fcos_core modeling rpn fcos graph_matching_head.py 126行&lt;br&gt;&amp;nbsp;self.node_cls_middle = nn.Sequential&lt;br&gt;&lt;font color=&quot;#ffb366&quot;&gt;设置一下 类别 的全连接结构&amp;nbsp;&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#ff3333&quot;&gt;注意：这是图结构中的分类，应该是作为辅助损失的！！！&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="1">
-          <mxGeometry x="65" y="-570" width="330" height="60" as="geometry" />
+          <mxGeometry x="75" y="-1380" width="330" height="60" as="geometry" />
         </mxCell>
         <mxCell id="9VyTqNnY38J_3XrKxKob-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#FF0000;" edge="1" parent="1" source="9VyTqNnY38J_3XrKxKob-25" target="9VyTqNnY38J_3XrKxKob-27">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="9VyTqNnY38J_3XrKxKob-25" value="fcos_core modeling rpn fcos graph_matching_head.py 133行&lt;br&gt;Graph-guided Memory Bank&lt;br&gt;&lt;font color=&quot;#ff3333&quot;&gt;注册图记忆银行结构&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#ff0000&quot;&gt;&#39;sr_seed&#39;, torch.randn(self.num_classes, 256)&lt;br&gt;&#39;tg_seed&#39;, torch.randn(self.num_classes, 256)&lt;br&gt;没明白定义一个9*256的矩阵干嘛？&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
-          <mxGeometry x="65" y="-480" width="330" height="100" as="geometry" />
+          <mxGeometry x="75" y="-1290" width="330" height="100" as="geometry" />
         </mxCell>
         <mxCell id="9VyTqNnY38J_3XrKxKob-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#FF0000;" edge="1" parent="1" source="9VyTqNnY38J_3XrKxKob-27" target="9VyTqNnY38J_3XrKxKob-29">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="9VyTqNnY38J_3XrKxKob-27" value="fcos_core modeling rpn fcos graph_matching_head.py 142行&lt;br&gt;Graph-guided Memory Bank&lt;br&gt;&lt;font color=&quot;#ff3333&quot;&gt;跨图交互，和图内交互&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#ff0000&quot;&gt;self.cross_domain_graph = MultiHeadAttention&lt;br&gt;&lt;/font&gt;&lt;span style=&quot;color: rgb(255, 0, 0);&quot;&gt;self.intra_domain_graph = MultiHeadAttention&lt;/span&gt;&lt;font color=&quot;#ff0000&quot;&gt;&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="1">
-          <mxGeometry x="65" y="-340" width="330" height="100" as="geometry" />
+          <mxGeometry x="75" y="-1150" width="330" height="100" as="geometry" />
         </mxCell>
         <mxCell id="9VyTqNnY38J_3XrKxKob-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#FF0000;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="9VyTqNnY38J_3XrKxKob-29" target="9VyTqNnY38J_3XrKxKob-34">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="449.9999999999998" y="-175" as="targetPoint" />
+            <mxPoint x="459.9999999999998" y="-985" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="9VyTqNnY38J_3XrKxKob-29" value="fcos_core modeling rpn fcos graph_matching_head.py 146行&lt;br&gt;self.node_affinity = Affinity(d=256)&lt;br&gt;&lt;font color=&quot;#ff3333&quot;&gt;亲和矩阵计算&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#ff0000&quot;&gt;主要还是利用全连接层进行运算&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="1">
-          <mxGeometry x="65" y="-210" width="330" height="70" as="geometry" />
+          <mxGeometry x="75" y="-1020" width="330" height="70" as="geometry" />
         </mxCell>
         <mxCell id="9VyTqNnY38J_3XrKxKob-34" value="&lt;div&gt;&lt;span style=&quot;color: rgb(0, 0, 0); background-color: initial;&quot;&gt;Affinity(&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;div&gt;&amp;nbsp; (fc_M): Sequential(&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; (0): Linear(in_features=512, out_features=512, bias=True)&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; (1): ReLU()&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; (2): Linear(in_features=512, out_features=1, bias=True)&lt;/div&gt;&lt;div&gt;&amp;nbsp; )&lt;/div&gt;&lt;div&gt;&amp;nbsp; (project_sr): Linear(in_features=256, out_features=256, bias=False)&lt;/div&gt;&lt;div&gt;&amp;nbsp; (project_tg): Linear(in_features=256, out_features=256, bias=False)&lt;/div&gt;&lt;div&gt;)&lt;/div&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#FF9933;align=left;" vertex="1" parent="1">
-          <mxGeometry x="500" y="-247.5" width="390" height="145" as="geometry" />
+          <mxGeometry x="510" y="-1057.5" width="390" height="145" as="geometry" />
         </mxCell>
-        <mxCell id="9VyTqNnY38J_3XrKxKob-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#000000;" edge="1" parent="1" source="9VyTqNnY38J_3XrKxKob-35" target="9VyTqNnY38J_3XrKxKob-38">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="9VyTqNnY38J_3XrKxKob-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#000000;" edge="1" parent="1" source="9VyTqNnY38J_3XrKxKob-35" target="9VyTqNnY38J_3XrKxKob-38">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-430" y="-1540" />
+              <mxPoint x="-430" y="-730" />
+              <mxPoint x="-685" y="-730" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="9VyTqNnY38J_3XrKxKob-35" value="fcos = build_rpn(cfg, backbone.out_channels).to(device) 54行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;建立FCOS结构&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="1">
-          <mxGeometry x="-410" y="-760" width="387.5" height="60" as="geometry" />
+          <mxGeometry x="-400" y="-1570" width="387.5" height="60" as="geometry" />
         </mxCell>
         <mxCell id="9VyTqNnY38J_3XrKxKob-38" value="&lt;div&gt;&lt;span style=&quot;color: rgb(0, 0, 0); background-color: initial;&quot;&gt;FCOSModule(&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&amp;nbsp; (head): FCOSHead(&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&amp;nbsp; &amp;nbsp; (cls_tower): Sequential(&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; (0): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; (1): GroupNorm(32, 256, eps=1e-05, affine=True)&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; (2): ReLU()&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; (3): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; (4): GroupNorm(32, 256, eps=1e-05, affine=True)&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; (5): ReLU()&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; (6): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; (7): GroupNorm(32, 256, eps=1e-05, affine=True)&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; (8): ReLU()&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; (9): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; (10): GroupNorm(32, 256, eps=1e-05, affine=True)&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; (11): ReLU()&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&amp;nbsp; &amp;nbsp; )&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&amp;nbsp; &amp;nbsp; (bbox_tower): Sequential(&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; (0): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; (1): GroupNorm(32, 256, eps=1e-05, affine=True)&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; (2): ReLU()&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; (3): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; (4): GroupNorm(32, 256, eps=1e-05, affine=True)&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; (5): ReLU()&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; (6): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; (7): GroupNorm(32, 256, eps=1e-05, affine=True)&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; (8): ReLU()&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; (9): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; (10): GroupNorm(32, 256, eps=1e-05, affine=True)&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; (11): ReLU()&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&amp;nbsp; &amp;nbsp; )&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&amp;nbsp; &amp;nbsp; (cls_logits): Conv2d(256, 8, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&amp;nbsp; &amp;nbsp; (bbox_pred): Conv2d(256, 4, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&amp;nbsp; &amp;nbsp; (centerness): Conv2d(256, 1, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&amp;nbsp; &amp;nbsp; (scales): ModuleList(&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; (0): Scale()&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; (1): Scale()&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; (2): Scale()&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; (3): Scale()&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; (4): Scale()&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&amp;nbsp; &amp;nbsp; )&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&amp;nbsp; )&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&amp;nbsp; (box_selector_test): FCOSPostProcessor()&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;)&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#FF9933;align=left;" vertex="1" parent="1">
           <mxGeometry x="-910" y="-690" width="450" height="630" as="geometry" />
