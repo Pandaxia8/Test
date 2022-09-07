@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-09-07T03:14:35.168Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.27" etag="YsVkjOvjS4PBGLvB1VsE" version="20.2.8" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-07T03:18:09.462Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.27" etag="AnRTdABFzVL0tTZQjqq7" version="20.2.8" type="github">
   <diagram id="kIxsnDEzaFE8jGhAG0Tv" name="第 1 页">
-    <mxGraphModel dx="981" dy="526" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" math="0" shadow="0">
+    <mxGraphModel dx="813" dy="435" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -60,8 +60,14 @@
         <mxCell id="9VyTqNnY38J_3XrKxKob-23" value="fcos_core modeling rpn fcos graph_matching_head.py 126行&lt;br&gt;&amp;nbsp;self.node_cls_middle = nn.Sequential&lt;br&gt;&lt;font color=&quot;#ffb366&quot;&gt;设置一下 类别 的全连接结构&amp;nbsp;&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#ff3333&quot;&gt;注意：这是图结构中的分类，应该是作为辅助损失的！！！&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="1">
           <mxGeometry x="645" y="530" width="330" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="9VyTqNnY38J_3XrKxKob-25" value="fcos_core modeling rpn fcos graph_matching_head.py 133行&lt;br&gt;Graph-guided Memory Bank&lt;br&gt;&lt;font color=&quot;#ff3333&quot;&gt;注册图记忆银行结构&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#ff0000&quot;&gt;&#39;sr_seed&#39;, torch.randn(self.num_classes, 256)&lt;br&gt;&#39;tg_seed&#39;, torch.randn(self.num_classes, 256)&lt;br&gt;没明白定义一个9*256的矩阵干嘛？&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="1">
+        <mxCell id="9VyTqNnY38J_3XrKxKob-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#FF0000;" edge="1" parent="1" source="9VyTqNnY38J_3XrKxKob-25" target="9VyTqNnY38J_3XrKxKob-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9VyTqNnY38J_3XrKxKob-25" value="fcos_core modeling rpn fcos graph_matching_head.py 133行&lt;br&gt;Graph-guided Memory Bank&lt;br&gt;&lt;font color=&quot;#ff3333&quot;&gt;注册图记忆银行结构&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#ff0000&quot;&gt;&#39;sr_seed&#39;, torch.randn(self.num_classes, 256)&lt;br&gt;&#39;tg_seed&#39;, torch.randn(self.num_classes, 256)&lt;br&gt;没明白定义一个9*256的矩阵干嘛？&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
           <mxGeometry x="645" y="620" width="330" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="9VyTqNnY38J_3XrKxKob-27" value="fcos_core modeling rpn fcos graph_matching_head.py 142行&lt;br&gt;Graph-guided Memory Bank&lt;br&gt;&lt;font color=&quot;#ff3333&quot;&gt;注册跨图交互，和图内交互&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#ff0000&quot;&gt;self.cross_domain_graph = MultiHeadAttention&lt;br&gt;self.intra_domain_graph = MultiHeadAttention&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="645" y="760" width="330" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
