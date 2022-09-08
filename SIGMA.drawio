@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-09-08T06:05:42.488Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.27" etag="3Vbwh1JbZNvluqNHcP6a" version="20.2.8" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-08T06:09:55.442Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.27" etag="tgOBufMib4lQpyWfetLC" version="20.2.8" type="github">
   <diagram id="kIxsnDEzaFE8jGhAG0Tv" name="第 1 页">
     <mxGraphModel dx="2216" dy="2464" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" math="0" shadow="0">
       <root>
@@ -155,6 +155,18 @@
         <mxCell id="9VyTqNnY38J_3XrKxKob-81" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#000000;strokeWidth=1;fontSize=15;fontColor=#FF8000;" edge="1" parent="1" source="9VyTqNnY38J_3XrKxKob-79" target="9VyTqNnY38J_3XrKxKob-80">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="9VyTqNnY38J_3XrKxKob-96" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#FF3333;strokeWidth=2;fontSize=15;fontColor=#FF8000;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="9VyTqNnY38J_3XrKxKob-79" target="9VyTqNnY38J_3XrKxKob-90">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="500" y="-1810" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-240" y="-936" />
+              <mxPoint x="-240" y="-710" />
+              <mxPoint x="240" y="-710" />
+              <mxPoint x="240" y="-1810" />
+              <mxPoint x="494" y="-1810" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
         <mxCell id="9VyTqNnY38J_3XrKxKob-79" value="proposals, proposal_losses, _ = &lt;br&gt;model_fcos( images_s, features_s, targets=targets)&amp;nbsp;62行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;特征送入fcos里面获取对应的损失&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="-650" y="-971.02" width="387.5" height="69.25" as="geometry" />
         </mxCell>
@@ -181,14 +193,14 @@
             <mxPoint x="493.7333333333331" y="-1595.65" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="9VyTqNnY38J_3XrKxKob-92" value="features_s = model_backbone(images_s.tensors) &lt;br&gt;features_t = model_backbone(images_t.tensors) 60行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;送入backbone获取特征&lt;br&gt;特征形状 [ batch, 256, h, w ]&amp;nbsp;&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+        <mxCell id="9VyTqNnY38J_3XrKxKob-92" value="box_cls, box_regression, centerness = &lt;br&gt;self.head(features, act_maps) 159行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;特征送入检测头中预测类别和对应中心点的4个参数，并且还有&lt;br&gt;一个额外的centerness预测&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="300" y="-1698.5" width="387.5" height="69.25" as="geometry" />
         </mxCell>
         <mxCell id="9VyTqNnY38J_3XrKxKob-93" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#000000;strokeWidth=1;fontSize=15;fontColor=#FF8000;" edge="1" parent="1" source="9VyTqNnY38J_3XrKxKob-94" target="9VyTqNnY38J_3XrKxKob-95">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="9VyTqNnY38J_3XrKxKob-94" value="proposals, proposal_losses, _ = &lt;br&gt;model_fcos( images_s, features_s, targets=targets)&amp;nbsp;62行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;特征送入fcos里面获取对应的损失&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
-          <mxGeometry x="300" y="-1599.02" width="387.5" height="69.25" as="geometry" />
+        <mxCell id="9VyTqNnY38J_3XrKxKob-94" value="locations = self.compute_locations(features) 161行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;计算不同层的损失，&lt;/font&gt;&lt;font color=&quot;#ff0000&quot;&gt;目前不知道是什么&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="300.01" y="-1601.4" width="387.5" height="69.25" as="geometry" />
         </mxCell>
         <mxCell id="9VyTqNnY38J_3XrKxKob-95" value="features_s = model_backbone(images_s.tensors) &lt;br&gt;features_t = model_backbone(images_t.tensors) 60行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;送入backbone获取特征&lt;br&gt;特征形状 [ batch, 256, h, w ]&amp;nbsp;&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="300" y="-1499.4" width="387.5" height="69.25" as="geometry" />
