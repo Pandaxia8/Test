@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-09-08T06:04:42.593Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.27" etag="jiqEU3E07VBtXfSEtJAW" version="20.2.8" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-08T06:05:42.488Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.27" etag="3Vbwh1JbZNvluqNHcP6a" version="20.2.8" type="github">
   <diagram id="kIxsnDEzaFE8jGhAG0Tv" name="第 1 页">
-    <mxGraphModel dx="3388" dy="3092" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" math="0" shadow="0">
+    <mxGraphModel dx="2216" dy="2464" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -170,22 +170,28 @@
         <mxCell id="9VyTqNnY38J_3XrKxKob-61" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;训练代码&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;strokeWidth=6;" vertex="1" parent="9VyTqNnY38J_3XrKxKob-83">
           <mxGeometry width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="9VyTqNnY38J_3XrKxKob-84" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#FF8000;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="9VyTqNnY38J_3XrKxKob-85" target="9VyTqNnY38J_3XrKxKob-87">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="553.7333333333331" y="-1465.65" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="9VyTqNnY38J_3XrKxKob-85" value="features_s = model_backbone(images_s.tensors) &lt;br&gt;features_t = model_backbone(images_t.tensors) 60行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;送入backbone获取特征&lt;br&gt;特征形状 [ batch, 256, h, w ]&amp;nbsp;&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
-          <mxGeometry x="360" y="-1568.5" width="387.5" height="69.25" as="geometry" />
-        </mxCell>
-        <mxCell id="9VyTqNnY38J_3XrKxKob-86" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#000000;strokeWidth=1;fontSize=15;fontColor=#FF8000;" edge="1" parent="1" source="9VyTqNnY38J_3XrKxKob-87" target="9VyTqNnY38J_3XrKxKob-88">
+        <mxCell id="9VyTqNnY38J_3XrKxKob-89" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#000000;strokeWidth=1;fontSize=15;fontColor=#000000;" edge="1" parent="1" source="9VyTqNnY38J_3XrKxKob-90" target="9VyTqNnY38J_3XrKxKob-92">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="9VyTqNnY38J_3XrKxKob-87" value="proposals, proposal_losses, _ = &lt;br&gt;model_fcos( images_s, features_s, targets=targets)&amp;nbsp;62行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;特征送入fcos里面获取对应的损失&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
-          <mxGeometry x="360" y="-1469.02" width="387.5" height="69.25" as="geometry" />
+        <mxCell id="9VyTqNnY38J_3XrKxKob-90" value="fcos_core -&amp;gt; modeling -&amp;gt; fcos -&amp;gt; fcos.py" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffcc99;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="356.88" y="-1780" width="273.75" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="9VyTqNnY38J_3XrKxKob-88" value="features_s = model_backbone(images_s.tensors) &lt;br&gt;features_t = model_backbone(images_t.tensors) 60行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;送入backbone获取特征&lt;br&gt;特征形状 [ batch, 256, h, w ]&amp;nbsp;&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
-          <mxGeometry x="360" y="-1369.4" width="387.5" height="69.25" as="geometry" />
+        <mxCell id="9VyTqNnY38J_3XrKxKob-91" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#FF8000;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="9VyTqNnY38J_3XrKxKob-92" target="9VyTqNnY38J_3XrKxKob-94">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="493.7333333333331" y="-1595.65" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9VyTqNnY38J_3XrKxKob-92" value="features_s = model_backbone(images_s.tensors) &lt;br&gt;features_t = model_backbone(images_t.tensors) 60行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;送入backbone获取特征&lt;br&gt;特征形状 [ batch, 256, h, w ]&amp;nbsp;&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="-1698.5" width="387.5" height="69.25" as="geometry" />
+        </mxCell>
+        <mxCell id="9VyTqNnY38J_3XrKxKob-93" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#000000;strokeWidth=1;fontSize=15;fontColor=#FF8000;" edge="1" parent="1" source="9VyTqNnY38J_3XrKxKob-94" target="9VyTqNnY38J_3XrKxKob-95">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9VyTqNnY38J_3XrKxKob-94" value="proposals, proposal_losses, _ = &lt;br&gt;model_fcos( images_s, features_s, targets=targets)&amp;nbsp;62行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;特征送入fcos里面获取对应的损失&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="-1599.02" width="387.5" height="69.25" as="geometry" />
+        </mxCell>
+        <mxCell id="9VyTqNnY38J_3XrKxKob-95" value="features_s = model_backbone(images_s.tensors) &lt;br&gt;features_t = model_backbone(images_t.tensors) 60行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;送入backbone获取特征&lt;br&gt;特征形状 [ batch, 256, h, w ]&amp;nbsp;&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="-1499.4" width="387.5" height="69.25" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
