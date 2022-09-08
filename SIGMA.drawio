@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-09-08T12:30:12.818Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.27" etag="qCWzhHNRy-E36ahz1sIz" version="20.2.8" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-08T12:31:11.195Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.27" etag="1EnqH5Hsy3XZAkBGxo-L" version="20.2.8" type="github">
   <diagram id="kIxsnDEzaFE8jGhAG0Tv" name="第 1 页">
     <mxGraphModel dx="2013" dy="2355" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" math="0" shadow="0">
       <root>
@@ -257,7 +257,7 @@
         <mxCell id="9VyTqNnY38J_3XrKxKob-110" value="is_in_boxes = reg_targets_per_im.min(dim=2)[0] &amp;gt; 0 106行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;过滤掉那些不在框内的点，其实就是将点分配到GT里面&lt;/font&gt;&lt;font color=&quot;#ff8000&quot;&gt;&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="700.01" y="-1384.7700000000002" width="387.5" height="69.25" as="geometry" />
         </mxCell>
-        <mxCell id="9VyTqNnY38J_3XrKxKob-111" value="self.loss_evaluator 190行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;送入预测和类别，框，和中心点，以及localtion计算损失&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+        <mxCell id="9VyTqNnY38J_3XrKxKob-111" value="max_reg_targets_per_im = reg_targets_per_im.max(dim=2)[0] 108行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;根据中心点到框四条边的max值，作为分配特征尺度策略&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="700.01" y="-1281.4" width="387.5" height="71.4" as="geometry" />
         </mxCell>
       </root>
