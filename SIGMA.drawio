@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-09-08T06:01:15.171Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.27" etag="8N79OFlUQI99oyPXapc-" version="20.2.8" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-08T06:02:14.466Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.27" etag="0Acked_LiaRJbmUsaAZM" version="20.2.8" type="github">
   <diagram id="kIxsnDEzaFE8jGhAG0Tv" name="第 1 页">
-    <mxGraphModel dx="2148" dy="2428" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" math="0" shadow="0">
+    <mxGraphModel dx="2873" dy="2816" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -164,7 +164,7 @@
         <mxCell id="9VyTqNnY38J_3XrKxKob-81" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#000000;strokeWidth=1;fontSize=15;fontColor=#FF8000;" edge="1" parent="1" source="9VyTqNnY38J_3XrKxKob-79" target="9VyTqNnY38J_3XrKxKob-80">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="9VyTqNnY38J_3XrKxKob-79" value="features_s = model_backbone(images_s.tensors) &lt;br&gt;features_t = model_backbone(images_t.tensors) 62行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;送入backbone获取特征&lt;br&gt;特征形状 [ batch, 256, h, w ]&amp;nbsp;&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+        <mxCell id="9VyTqNnY38J_3XrKxKob-79" value="proposals, proposal_losses, _ = &lt;br&gt;model_fcos( images_s, features_s, targets=targets)&amp;nbsp;62行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;特征送入fcos里面获取对应的框&lt;br&gt;特征形状 [ batch, 256, h, w ]&amp;nbsp;&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="353" y="-1589.77" width="387.5" height="69.25" as="geometry" />
         </mxCell>
         <mxCell id="9VyTqNnY38J_3XrKxKob-80" value="features_s = model_backbone(images_s.tensors) &lt;br&gt;features_t = model_backbone(images_t.tensors) 60行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;送入backbone获取特征&lt;br&gt;特征形状 [ batch, 256, h, w ]&amp;nbsp;&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
