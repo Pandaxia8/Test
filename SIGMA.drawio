@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-09-08T10:49:42.187Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.27" etag="-A0gHUF_uHXg_OyT7cW2" version="20.2.8" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-08T11:07:51.263Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.27" etag="gVJF9yfeoKzMKNaJXH_9" version="20.2.8" type="github">
   <diagram id="kIxsnDEzaFE8jGhAG0Tv" name="第 1 页">
-    <mxGraphModel dx="1877" dy="2283" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" math="0" shadow="0">
+    <mxGraphModel dx="1793" dy="2238" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -207,8 +207,58 @@
         <mxCell id="9VyTqNnY38J_3XrKxKob-95" value="locations_per_level = self.compute_locations_per_level 230行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;获取单独层的localtion&lt;/font&gt;&lt;font color=&quot;#ff8000&quot;&gt;，&lt;/font&gt;&lt;font color=&quot;#ff0000&quot;&gt;&lt;b&gt;目前不知道是什么&lt;/b&gt;&lt;/font&gt;&lt;font color=&quot;#ff8000&quot;&gt;&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="260" y="-1489.5500000000002" width="387.5" height="69.25" as="geometry" />
         </mxCell>
+        <mxCell id="9VyTqNnY38J_3XrKxKob-100" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;fontSize=15;fontColor=#FF0000;" edge="1" parent="1" source="9VyTqNnY38J_3XrKxKob-97" target="9VyTqNnY38J_3XrKxKob-99">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="9VyTqNnY38J_3XrKxKob-97" value="locations_per_level = self.compute_locations_per_level 237行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;获取单独层的localtion&lt;/font&gt;&lt;font color=&quot;#ff8000&quot;&gt;，&lt;/font&gt;&lt;font color=&quot;#ff0000&quot;&gt;&lt;b&gt;目前不知道是什么&lt;/b&gt;&lt;/font&gt;&lt;font color=&quot;#ff8000&quot;&gt;&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="260.01" y="-1384.7700000000002" width="387.5" height="69.25" as="geometry" />
+        </mxCell>
+        <mxCell id="9VyTqNnY38J_3XrKxKob-112" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#000000;strokeWidth=1;fontSize=15;fontColor=#FF0000;" edge="1" parent="1" source="9VyTqNnY38J_3XrKxKob-99" target="9VyTqNnY38J_3XrKxKob-102">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="680" y="-1246" />
+              <mxPoint x="680" y="-1790" />
+              <mxPoint x="894" y="-1790" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9VyTqNnY38J_3XrKxKob-99" value="self.loss_evaluator 190行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;送入预测和类别，框，和中心点，以及localtion计算损失&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="260.01" y="-1281.4" width="387.5" height="71.4" as="geometry" />
+        </mxCell>
+        <mxCell id="9VyTqNnY38J_3XrKxKob-101" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#000000;strokeWidth=1;fontSize=15;fontColor=#000000;" edge="1" parent="1" source="9VyTqNnY38J_3XrKxKob-102" target="9VyTqNnY38J_3XrKxKob-104">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9VyTqNnY38J_3XrKxKob-102" value="fcos_core -&amp;gt; modeling -&amp;gt; fcos -&amp;gt; loss.py" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffcc99;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="756.88" y="-1770.15" width="273.75" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="9VyTqNnY38J_3XrKxKob-103" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#FF8000;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="9VyTqNnY38J_3XrKxKob-104" target="9VyTqNnY38J_3XrKxKob-106">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="893.7333333333331" y="-1585.8000000000002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9VyTqNnY38J_3XrKxKob-104" value="box_cls, box_regression, centerness = &lt;br&gt;self.head(features, act_maps) 159行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;特征送入检测头中预测类别和对应中心点的4个参数，并且还有&lt;br&gt;一个额外的centerness预测&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="-1688.65" width="387.5" height="69.25" as="geometry" />
+        </mxCell>
+        <mxCell id="9VyTqNnY38J_3XrKxKob-105" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#000000;strokeWidth=1;fontSize=15;fontColor=#FF8000;" edge="1" parent="1" source="9VyTqNnY38J_3XrKxKob-106" target="9VyTqNnY38J_3XrKxKob-108">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9VyTqNnY38J_3XrKxKob-106" value="locations = self.compute_locations(features) 161行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;计算所有不同层的location的总和，&lt;/font&gt;&lt;font color=&quot;#ff0000&quot;&gt;&lt;b&gt;目前不知道是什么&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="700.01" y="-1591.5500000000002" width="387.5" height="69.25" as="geometry" />
+        </mxCell>
+        <mxCell id="9VyTqNnY38J_3XrKxKob-107" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;fontSize=15;fontColor=#FF0000;" edge="1" parent="1" source="9VyTqNnY38J_3XrKxKob-108" target="9VyTqNnY38J_3XrKxKob-110">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9VyTqNnY38J_3XrKxKob-108" value="locations_per_level = self.compute_locations_per_level 230行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;获取单独层的localtion&lt;/font&gt;&lt;font color=&quot;#ff8000&quot;&gt;，&lt;/font&gt;&lt;font color=&quot;#ff0000&quot;&gt;&lt;b&gt;目前不知道是什么&lt;/b&gt;&lt;/font&gt;&lt;font color=&quot;#ff8000&quot;&gt;&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="-1489.5500000000002" width="387.5" height="69.25" as="geometry" />
+        </mxCell>
+        <mxCell id="9VyTqNnY38J_3XrKxKob-109" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;fontSize=15;fontColor=#FF0000;" edge="1" parent="1" source="9VyTqNnY38J_3XrKxKob-110" target="9VyTqNnY38J_3XrKxKob-111">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9VyTqNnY38J_3XrKxKob-110" value="locations_per_level = self.compute_locations_per_level 237行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;获取单独层的localtion&lt;/font&gt;&lt;font color=&quot;#ff8000&quot;&gt;，&lt;/font&gt;&lt;font color=&quot;#ff0000&quot;&gt;&lt;b&gt;目前不知道是什么&lt;/b&gt;&lt;/font&gt;&lt;font color=&quot;#ff8000&quot;&gt;&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="700.01" y="-1384.7700000000002" width="387.5" height="69.25" as="geometry" />
+        </mxCell>
+        <mxCell id="9VyTqNnY38J_3XrKxKob-111" value="self.loss_evaluator 190行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;送入预测和类别，框，和中心点，以及localtion计算损失&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="700.01" y="-1281.4" width="387.5" height="71.4" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
