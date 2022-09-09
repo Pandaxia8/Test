@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-09-09T02:11:12.569Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.27" etag="KS6u1_bnGrXG5NOOiNWM" version="20.2.8" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-09T02:11:26.131Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.27" etag="DXY2RX7tuEy2OwOXZhHU" version="20.2.8" type="github">
   <diagram id="kIxsnDEzaFE8jGhAG0Tv" name="第 1 页">
     <mxGraphModel dx="3096" dy="2936" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" math="0" shadow="0">
       <root>
@@ -266,7 +266,7 @@
         <mxCell id="9VyTqNnY38J_3XrKxKob-113" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;strokeWidth=1;fontSize=15;fontColor=#FF3333;size=0.5;" vertex="1" parent="1">
           <mxGeometry x="1090" y="-1691.4" width="40" height="671.4" as="geometry" />
         </mxCell>
-        <mxCell id="9VyTqNnY38J_3XrKxKob-114" value="&lt;font style=&quot;font-size: 12px;&quot; color=&quot;#ff0000&quot;&gt;&lt;b&gt;对回归标签进行GT建模&lt;br&gt;对label进行分配&lt;br&gt;&lt;/b&gt;&lt;/font&gt;&lt;b style=&quot;color: rgb(0, 0, 0); font-size: 12px;&quot;&gt;&lt;font color=&quot;#ff3333&quot;&gt;对框进行多尺度的分配&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=15;fontColor=#FF3333;" vertex="1" parent="1">
+        <mxCell id="9VyTqNnY38J_3XrKxKob-114" value="&lt;font style=&quot;font-size: 12px;&quot; color=&quot;#ff0000&quot;&gt;&lt;b&gt;对回归标签进行GT建模&lt;br&gt;&lt;/b&gt;&lt;/font&gt;&lt;b style=&quot;color: rgb(0, 0, 0); font-size: 12px;&quot;&gt;&lt;font color=&quot;#ff3333&quot;&gt;对框进行多尺度的分配&lt;br&gt;&lt;/font&gt;&lt;/b&gt;&lt;b style=&quot;color: rgb(255, 0, 0); font-size: 12px;&quot;&gt;对label进行分配&lt;/b&gt;&lt;b style=&quot;color: rgb(0, 0, 0); font-size: 12px;&quot;&gt;&lt;font color=&quot;#ff3333&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=15;fontColor=#FF3333;" vertex="1" parent="1">
           <mxGeometry x="1120" y="-1390.7" width="150" height="70" as="geometry" />
         </mxCell>
         <mxCell id="9VyTqNnY38J_3XrKxKob-118" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;fontSize=15;fontColor=#FF3333;" edge="1" parent="1" source="9VyTqNnY38J_3XrKxKob-115" target="9VyTqNnY38J_3XrKxKob-117">
