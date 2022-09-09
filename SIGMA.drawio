@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-09-09T08:32:14.540Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.27" etag="BSAXEwL5qtGGW_u39vJd" version="20.2.8" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-09T08:33:42.552Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.27" etag="C8AY_agfs8EdfmZSM0Tv" version="20.2.8" type="github">
   <diagram id="kIxsnDEzaFE8jGhAG0Tv" name="第 1 页">
-    <mxGraphModel dx="1861" dy="2274" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" math="0" shadow="0">
+    <mxGraphModel dx="1990" dy="2343" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -295,7 +295,7 @@
         <mxCell id="9VyTqNnY38J_3XrKxKob-121" value="centerness_targets = self.compute_centerness_targets(reg_targets_flatten) 236行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;计算中心的GT坐标&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="700" y="-876.5500000000001" width="387.5" height="71.4" as="geometry" />
         </mxCell>
-        <mxCell id="9VyTqNnY38J_3XrKxKob-129" value="reg_loss = self.box_reg_loss_func 237行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;计算回归损失，并且这个回归损失加上了中心点的权重&lt;br&gt;约在中心权重越大&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+        <mxCell id="9VyTqNnY38J_3XrKxKob-129" value="reg_loss = self.box_reg_loss_func 242行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;中心损失计算直接套用的是BCEloss&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="700.01" y="-770" width="387.5" height="71.4" as="geometry" />
         </mxCell>
       </root>
