@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-09-09T02:07:36.504Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.27" etag="i48FuK25Bj8T5f9zmrzQ" version="20.2.8" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-09T02:09:53.603Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.27" etag="x7y6WtpRLsoIgNLvXqnX" version="20.2.8" type="github">
   <diagram id="kIxsnDEzaFE8jGhAG0Tv" name="第 1 页">
-    <mxGraphModel dx="2385" dy="2555" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" math="0" shadow="0">
+    <mxGraphModel dx="2294" dy="2506" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -269,8 +269,14 @@
         <mxCell id="9VyTqNnY38J_3XrKxKob-114" value="&lt;font style=&quot;font-size: 12px;&quot; color=&quot;#ff0000&quot;&gt;&lt;b&gt;对回归标签进行GT建模&lt;br&gt;对label进行分配&lt;br&gt;&lt;/b&gt;&lt;/font&gt;&lt;b style=&quot;color: rgb(0, 0, 0); font-size: 12px;&quot;&gt;&lt;font color=&quot;#ff3333&quot;&gt;对框进行多尺度的分配&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=15;fontColor=#FF3333;" vertex="1" parent="1">
           <mxGeometry x="1115" y="-1486.4" width="150" height="70" as="geometry" />
         </mxCell>
+        <mxCell id="9VyTqNnY38J_3XrKxKob-118" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;fontSize=15;fontColor=#FF3333;" edge="1" parent="1" source="9VyTqNnY38J_3XrKxKob-115" target="9VyTqNnY38J_3XrKxKob-117">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="9VyTqNnY38J_3XrKxKob-115" value="labels_per_im = labels_per_im[locations_to_gt_inds] labels_per_im[locations_to_min_area == INF] = 0&amp;nbsp;126行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;根据回归标签的情况，再次对类别标签进行一个筛选&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="700" y="-1180" width="387.5" height="71.4" as="geometry" />
+        </mxCell>
+        <mxCell id="9VyTqNnY38J_3XrKxKob-117" value="for level in range(len(points)): 72行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;根对一个batch里面的图片，尺度相同的全部cat在一起（5个尺度）&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="-1080" width="387.5" height="71.4" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
