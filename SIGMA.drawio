@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-09-10T06:04:01.265Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.27" etag="Fsp-syhaW-fQ_jlS0Z6z" version="20.3.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-10T12:28:18.615Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.27" etag="YWiSYUKxzwlg-X_OXDm-" version="20.3.0" type="github">
   <diagram id="kIxsnDEzaFE8jGhAG0Tv" name="第 1 页">
-    <mxGraphModel dx="1877" dy="2283" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" math="0" shadow="0">
+    <mxGraphModel dx="2385" dy="2555" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -405,11 +405,17 @@
         <mxCell id="u7gNK5loML6lBVQrGU0d-36" value="labels, reg_targets = self.compute_targets_for_locations 291行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;和之前一样，计算一下每个特征点需要分配到什么类别&lt;br&gt;需要分配到哪个尺度的特征图中&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="1719.9999999999998" y="-1590.65" width="387.5" height="69.25" as="geometry" />
         </mxCell>
-        <mxCell id="u7gNK5loML6lBVQrGU0d-38" value="nodes_1, labels_1, weights_1 = self.graph_generator( self.compute_locations(features_s), features_s, targets ) 221行&lt;br&gt;&lt;font color=&quot;#ff6666&quot;&gt;&lt;b&gt;生成图结构&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#f8cecc;strokeColor=#FF3333;strokeWidth=3;" vertex="1" parent="1">
+        <mxCell id="u7gNK5loML6lBVQrGU0d-42" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;fontColor=#FF6666;" edge="1" parent="1" source="u7gNK5loML6lBVQrGU0d-38" target="u7gNK5loML6lBVQrGU0d-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="u7gNK5loML6lBVQrGU0d-38" value="nodes_1, labels_1, weights_1 = self.graph_generator( self.compute_locations(features_s), features_s, targets ) 221行&lt;br&gt;&lt;font color=&quot;#ff6666&quot;&gt;&lt;b&gt;生源域成图结构&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#f8cecc;strokeColor=#FF3333;strokeWidth=3;" vertex="1" parent="1">
           <mxGeometry x="1299.99" y="-1590.65" width="387.5" height="69.25" as="geometry" />
         </mxCell>
         <mxCell id="u7gNK5loML6lBVQrGU0d-39" value="pos_indx = labels[l].reshape(-1) &amp;gt; 0 &lt;br&gt;neg_indx = labels[l].reshape(-1) == 0 368行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;获取一下前景和背景，前景是类别大于0的，背景是类别等于0的&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="1719.9899999999998" y="-1489.5500000000002" width="387.5" height="69.25" as="geometry" />
+        </mxCell>
+        <mxCell id="u7gNK5loML6lBVQrGU0d-41" value="nodes_1, labels_1, weights_1 = self.graph_generator( self.compute_locations(features_s), features_s, targets ) 224行&lt;br&gt;&lt;font color=&quot;#ff6666&quot;&gt;&lt;b&gt;生目标域成图结构&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#f8cecc;strokeColor=#FF3333;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="1300" y="-1490.15" width="387.5" height="69.25" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
