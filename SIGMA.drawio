@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-09-10T01:59:49.677Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.27" etag="ic_P-naaGZ_grOq2k7o6" version="20.3.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-10T02:42:16.828Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.27" etag="-WzMOmTIr8pF-m25qOgR" version="20.3.0" type="github">
   <diagram id="kIxsnDEzaFE8jGhAG0Tv" name="第 1 页">
-    <mxGraphModel dx="2873" dy="2816" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" math="0" shadow="0">
+    <mxGraphModel dx="2385" dy="2555" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -181,7 +181,10 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="9VyTqNnY38J_3XrKxKob-80" value="score_maps, zeros, _ = model_fcos(images_t, features_t, targets=None)&amp;nbsp;66行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;这次送入的是目标域的特征，但是现在不知道有什么不同&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+        <mxCell id="u7gNK5loML6lBVQrGU0d-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;" edge="1" parent="1" source="9VyTqNnY38J_3XrKxKob-80" target="u7gNK5loML6lBVQrGU0d-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9VyTqNnY38J_3XrKxKob-80" value="score_maps, zeros, _ = model_fcos(images_t, features_t, targets=None)&amp;nbsp;66行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;这次送入的是目标域的特征，但这次不计算损失了，只是对目标域的特征图进行sigmoid激活，相当于判断是前景还是背景&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="-650" y="-871.4000000000001" width="387.5" height="69.25" as="geometry" />
         </mxCell>
         <mxCell id="9VyTqNnY38J_3XrKxKob-83" value="" style="group" parent="1" vertex="1" connectable="0">
@@ -336,6 +339,68 @@
         </mxCell>
         <mxCell id="u7gNK5loML6lBVQrGU0d-11" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;scores.append(cls_logits.sigmoid().detach())&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;background-color: initial;&quot; color=&quot;#ff8000&quot;&gt;这里只对分类分数sigmoid，也就是看下是前景还是背景&lt;/font&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;align=center;" vertex="1" parent="1">
           <mxGeometry x="260.02" y="-767.8500000000003" width="387.5" height="69.25" as="geometry" />
+        </mxCell>
+        <mxCell id="u7gNK5loML6lBVQrGU0d-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#FF0000;strokeWidth=2;fontColor=#000000;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="u7gNK5loML6lBVQrGU0d-13" target="u7gNK5loML6lBVQrGU0d-16">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1480" y="-1790" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-250" y="-733" />
+              <mxPoint x="-250" y="-670" />
+              <mxPoint x="1270" y="-670" />
+              <mxPoint x="1270" y="-1790" />
+              <mxPoint x="1494" y="-1790" />
+              <mxPoint x="1494" y="-1770" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="u7gNK5loML6lBVQrGU0d-13" value="(features_s, features_t), middle_head_loss = model_middle_head(images, (features_s, features_t), targets=targets, score_maps=score_maps) 70行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="-650" y="-772.15" width="387.5" height="77.85" as="geometry" />
+        </mxCell>
+        <mxCell id="u7gNK5loML6lBVQrGU0d-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#000000;strokeWidth=1;fontColor=#000000;" edge="1" parent="1" source="u7gNK5loML6lBVQrGU0d-16" target="u7gNK5loML6lBVQrGU0d-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="u7gNK5loML6lBVQrGU0d-16" value="fcos_core -&amp;gt; modeling -&amp;gt; fcos -&amp;gt; graph_matching_head.py" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffcc99;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="1356.87" y="-1770.15" width="273.75" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="u7gNK5loML6lBVQrGU0d-17" value="labels, reg_targets = self.prepare_targets(locations, targets) 197行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;送入gt和locations&lt;/font&gt;&lt;font color=&quot;#ff8000&quot;&gt;，&lt;/font&gt;&lt;font color=&quot;#ff0000&quot;&gt;&lt;b&gt;locations其实就是特征图每个点的位置&lt;/b&gt;&lt;/font&gt;&lt;font color=&quot;#ff8000&quot;&gt;&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="699.99" y="-1688.65" width="387.5" height="69.25" as="geometry" />
+        </mxCell>
+        <mxCell id="u7gNK5loML6lBVQrGU0d-18" value="expanded_object_sizes_of_interest = torch.cat(expanded_object_sizes_of_interest, dim=0) 58行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;分配一下框分配到哪个大小的特征图进行计算损失，类似FPN&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="-1591.5500000000002" width="387.5" height="69.25" as="geometry" />
+        </mxCell>
+        <mxCell id="u7gNK5loML6lBVQrGU0d-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#000000;strokeWidth=1;fontColor=#000000;" edge="1" parent="1" source="u7gNK5loML6lBVQrGU0d-19" target="u7gNK5loML6lBVQrGU0d-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="u7gNK5loML6lBVQrGU0d-19" value="nodes_1, labels_1, weights_1 = self.graph_generator( self.compute_locations(features_s), features_s, targets ) 197行&lt;br&gt;&lt;font color=&quot;#ff6666&quot;&gt;&lt;b&gt;生成图结构&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="1300" y="-1690.15" width="387.5" height="69.25" as="geometry" />
+        </mxCell>
+        <mxCell id="u7gNK5loML6lBVQrGU0d-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#FF3333;strokeWidth=2;fontColor=#FF6666;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="u7gNK5loML6lBVQrGU0d-20" target="u7gNK5loML6lBVQrGU0d-33">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1940" y="-1790" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1710" y="-1556" />
+              <mxPoint x="1710" y="-1790" />
+              <mxPoint x="1914" y="-1790" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="u7gNK5loML6lBVQrGU0d-20" value="expanded_object_sizes_of_interest = torch.cat(expanded_object_sizes_of_interest, dim=0) 58行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;分配一下框分配到哪个大小的特征图进行计算损失，类似FPN&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="1299.9999999999998" y="-1590.65" width="387.5" height="69.25" as="geometry" />
+        </mxCell>
+        <mxCell id="u7gNK5loML6lBVQrGU0d-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#000000;strokeWidth=1;fontColor=#000000;" edge="1" parent="1" source="u7gNK5loML6lBVQrGU0d-33" target="u7gNK5loML6lBVQrGU0d-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="u7gNK5loML6lBVQrGU0d-33" value="fcos_core -&amp;gt; modeling -&amp;gt; fcos -&amp;gt; graph_matching_head.py" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffcc99;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="1776.87" y="-1770.15" width="273.75" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="u7gNK5loML6lBVQrGU0d-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#000000;strokeWidth=1;fontColor=#000000;" edge="1" parent="1" source="u7gNK5loML6lBVQrGU0d-35" target="u7gNK5loML6lBVQrGU0d-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="u7gNK5loML6lBVQrGU0d-35" value="nodes_1, labels_1, weights_1 = self.graph_generator( self.compute_locations(features_s), features_s, targets ) 197行&lt;br&gt;&lt;font color=&quot;#ff6666&quot;&gt;&lt;b&gt;生成图结构&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="1720" y="-1690.15" width="387.5" height="69.25" as="geometry" />
+        </mxCell>
+        <mxCell id="u7gNK5loML6lBVQrGU0d-36" value="expanded_object_sizes_of_interest = torch.cat(expanded_object_sizes_of_interest, dim=0) 58行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;分配一下框分配到哪个大小的特征图进行计算损失，类似FPN&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="1719.9999999999998" y="-1590.65" width="387.5" height="69.25" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
