@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-09-10T03:04:08.956Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.27" etag="L6T7ZSlgH6PD6AYUaz7Z" version="20.3.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-10T05:47:47.301Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.27" etag="zY6qGnRbuJx8csckKxbH" version="20.3.0" type="github">
   <diagram id="kIxsnDEzaFE8jGhAG0Tv" name="第 1 页">
     <mxGraphModel dx="1877" dy="2283" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" math="0" shadow="0">
       <root>
@@ -399,7 +399,7 @@
         <mxCell id="u7gNK5loML6lBVQrGU0d-35" value="labels = self.prepare_targets(locations, targets) 361行&lt;br&gt;&lt;font color=&quot;#ff6666&quot;&gt;&lt;b&gt;生成图结构&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="1720" y="-1690.15" width="387.5" height="69.25" as="geometry" />
         </mxCell>
-        <mxCell id="u7gNK5loML6lBVQrGU0d-36" value="expanded_object_sizes_of_interest = torch.cat(expanded_object_sizes_of_interest, dim=0) 58行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;分配一下框分配到哪个大小的特征图进行计算损失，类似FPN&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+        <mxCell id="u7gNK5loML6lBVQrGU0d-36" value="labels, reg_targets = self.compute_targets_for_locations 291行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;和之前一样，计算一下每个特征点需要分配到什么类别&lt;br&gt;需要分配到哪个尺度的特征图中&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="1719.9999999999998" y="-1590.65" width="387.5" height="69.25" as="geometry" />
         </mxCell>
         <mxCell id="u7gNK5loML6lBVQrGU0d-38" value="nodes_1, labels_1, weights_1 = self.graph_generator( self.compute_locations(features_s), features_s, targets ) 221行&lt;br&gt;&lt;font color=&quot;#ff6666&quot;&gt;&lt;b&gt;生成图结构&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
