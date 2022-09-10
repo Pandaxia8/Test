@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-09-10T01:58:22.394Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.27" etag="YZUFQpPxF9QFiIt8Grsi" version="20.3.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-10T01:59:31.790Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.27" etag="nmPoAMtoiJAWQR_lNMdF" version="20.3.0" type="github">
   <diagram id="kIxsnDEzaFE8jGhAG0Tv" name="第 1 页">
     <mxGraphModel dx="2338" dy="2530" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" math="0" shadow="0">
       <root>
@@ -328,8 +328,14 @@
         <mxCell id="u7gNK5loML6lBVQrGU0d-7" value="locations = self.compute_locations(features) 161行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;计算所有不同层的location的总和，&lt;/font&gt;&lt;font color=&quot;#ff0000&quot;&gt;&lt;b&gt;目前不知道是什么&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="260" y="-995.0000000000002" width="387.5" height="69.25" as="geometry" />
         </mxCell>
+        <mxCell id="u7gNK5loML6lBVQrGU0d-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;" edge="1" parent="1" source="u7gNK5loML6lBVQrGU0d-8" target="u7gNK5loML6lBVQrGU0d-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="u7gNK5loML6lBVQrGU0d-8" value="&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22return%20self._forward_train_source%20172%E8%A1%8C%26lt%3Bbr%26gt%3B%26lt%3Bfont%20color%3D%26quot%3B%23ff8000%26quot%3B%26gt%3B%E8%AE%A1%E7%AE%97%E6%BA%90%E5%9F%9F%E7%9A%84%E6%8D%9F%E5%A4%B1%26lt%3Bbr%26gt%3B%26lt%3B%2Ffont%26gt%3B%22%20style%3D%22whiteSpace%3Dwrap%3Bhtml%3D1%3Brounded%3D1%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22260.01%22%20y%3D%22-1384.7700000000002%22%20width%3D%22387.5%22%20height%3D%2269.25%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;&amp;nbsp;return self._forward_target&lt;br&gt;( box_cls, box_regression, centerness )172行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;这里只对分类分数sigmoid，也就是看下是前景还是背景&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="260" y="-890.0000000000002" width="387.5" height="69.25" as="geometry" />
+        </mxCell>
+        <mxCell id="u7gNK5loML6lBVQrGU0d-11" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;scores.append(cls_logits.sigmoid().detach())&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;background-color: initial;&quot; color=&quot;#ff8000&quot;&gt;这里只对分类分数sigmoid，也就是看下是前景还是背景&lt;/font&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="260.01" y="-780.0000000000002" width="387.5" height="69.25" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
