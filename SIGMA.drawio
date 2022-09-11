@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-09-11T03:09:01.947Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.27" etag="L1J4HCi6R9OKXGdC2lt1" version="20.3.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-11T03:09:17.263Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.27" etag="PgRg-u4jdkcbK5reE7Gf" version="20.3.0" type="github">
   <diagram id="kIxsnDEzaFE8jGhAG0Tv" name="第 1 页">
     <mxGraphModel dx="2013" dy="2355" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" math="0" shadow="0">
       <root>
@@ -434,7 +434,7 @@
         <mxCell id="u7gNK5loML6lBVQrGU0d-46" value="nodes_rev = self.node_dis_2(nodes_rev) 259行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;对源域和目标域节点进行一个MLP映射&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="1299.99" y="-1290" width="387.5" height="69.25" as="geometry" />
         </mxCell>
-        <mxCell id="u7gNK5loML6lBVQrGU0d-48" value="nodes_rev = self.node_dis_2(nodes_rev) 268行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;对节点进行语义补全&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+        <mxCell id="u7gNK5loML6lBVQrGU0d-48" value="nodes_rev = self.node_dis_2(nodes_rev) 268行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;对节点进行语义补全，对应文章中的DNC&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="1300" y="-1187" width="387.5" height="69.25" as="geometry" />
         </mxCell>
       </root>
