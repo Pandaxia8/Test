@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-09-11T11:50:03.185Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.27" etag="IN3kyY7H8IVKl_eZUdHc" version="20.3.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-11T11:54:14.009Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.27" etag="0OGySlx-1IBwNPaN9AjX" version="20.3.0" type="github">
   <diagram id="kIxsnDEzaFE8jGhAG0Tv" name="第 1 页">
-    <mxGraphModel dx="2181" dy="2446" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" math="0" shadow="0">
+    <mxGraphModel dx="2873" dy="2816" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -444,7 +444,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="u7gNK5loML6lBVQrGU0d-50" value="if sr_indx.any() and tg_indx.any(): 361行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;源域和目标域的节点都存在就直接对齐&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
-          <mxGeometry x="1300" y="-750" width="390.01" height="69.25" as="geometry" />
+          <mxGeometry x="1297.49" y="-767.85" width="390.01" height="69.25" as="geometry" />
         </mxCell>
         <mxCell id="u7gNK5loML6lBVQrGU0d-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#000000;strokeWidth=1;fontSize=13;fontColor=#FF3333;" edge="1" parent="1" source="u7gNK5loML6lBVQrGU0d-52" target="u7gNK5loML6lBVQrGU0d-61">
           <mxGeometry relative="1" as="geometry" />
@@ -462,11 +462,22 @@
             </Array>
           </mxGeometry>
         </mxCell>
+        <mxCell id="u7gNK5loML6lBVQrGU0d-73" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;fontSize=13;fontColor=#FF3333;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="u7gNK5loML6lBVQrGU0d-55" target="u7gNK5loML6lBVQrGU0d-50">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1340" y="-780" as="targetPoint" />
+            <mxPoint x="1410" y="-1056" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="1290" y="-1056" />
+              <mxPoint x="1290" y="-800" />
+              <mxPoint x="1493" y="-800" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
         <mxCell id="u7gNK5loML6lBVQrGU0d-55" value="&lt;font color=&quot;#000000&quot;&gt;所有的域的&lt;br&gt;节点都存在&lt;/font&gt;" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;strokeColor=#000000;fontColor=#FF6666;" vertex="1" parent="1">
           <mxGeometry x="1423.75" y="-1091.3999999999999" width="140" height="70" as="geometry" />
         </mxCell>
         <mxCell id="u7gNK5loML6lBVQrGU0d-58" value="是" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#FF3333;strokeWidth=2;fontSize=13;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="1380" y="-1080" width="40" height="30" as="geometry" />
+          <mxGeometry x="1383.75" y="-1091.4" width="40" height="30" as="geometry" />
         </mxCell>
         <mxCell id="u7gNK5loML6lBVQrGU0d-60" value="否" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#FF3333;strokeWidth=2;fontSize=13;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="1563.75" y="-1080" width="40" height="30" as="geometry" />
@@ -474,19 +485,8 @@
         <mxCell id="u7gNK5loML6lBVQrGU0d-61" value="tg_nodes_c = torch.normal(mean=tg_nodes_c, std=sr_nodes_c.std(0).unsqueeze(0).expand(sr_nodes_c.size())).cuda()&lt;br&gt;387行 或者 411行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;利用memory bank中的均值，以及现在的节点的方差进行构建虚拟节点&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="1300" y="-887" width="390" height="69.25" as="geometry" />
         </mxCell>
-        <mxCell id="u7gNK5loML6lBVQrGU0d-67" value="&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22if%20sr_indx.any()%20and%20tg_indx.any()%3A%20361%E8%A1%8C%26lt%3Bbr%26gt%3B%26lt%3Bfont%20color%3D%26quot%3B%23ff8000%26quot%3B%26gt%3B%E6%BA%90%E5%9F%9F%E5%92%8C%E7%9B%AE%E6%A0%87%E5%9F%9F%E7%9A%84%E8%8A%82%E7%82%B9%E9%83%BD%E5%AD%98%E5%9C%A8%E5%B0%B1%E7%9B%B4%E6%8E%A5%E5%AF%B9%E9%BD%90%26lt%3B%2Ffont%26gt%3B%22%20style%3D%22whiteSpace%3Dwrap%3Bhtml%3D1%3Brounded%3D1%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%221298.74%22%20y%3D%22-990.75%22%20width%3D%22390.01%22%20height%3D%2269.25%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;&amp;nbsp;nodes_tg = torch.cat(tg_nodes_category_first, dim=0)&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;426行&lt;/span&gt;&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;讲节点经行再次拼接，不过这次的话以类别优先&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
-          <mxGeometry x="1299.9999999999998" y="-646.75" width="390.01" height="69.25" as="geometry" />
-        </mxCell>
-        <mxCell id="u7gNK5loML6lBVQrGU0d-72" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;fontSize=13;fontColor=#FF3333;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="u7gNK5loML6lBVQrGU0d-55" target="u7gNK5loML6lBVQrGU0d-50">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1494" y="-790" as="targetPoint" />
-            <mxPoint x="1423.75" y="-1056.3999999999999" as="sourcePoint" />
-            <Array as="points">
-              <mxPoint x="1290" y="-1056" />
-              <mxPoint x="1290" y="-790" />
-              <mxPoint x="1495" y="-790" />
-            </Array>
-          </mxGeometry>
+        <mxCell id="u7gNK5loML6lBVQrGU0d-67" value="&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22if%20sr_indx.any()%20and%20tg_indx.any()%3A%20361%E8%A1%8C%26lt%3Bbr%26gt%3B%26lt%3Bfont%20color%3D%26quot%3B%23ff8000%26quot%3B%26gt%3B%E6%BA%90%E5%9F%9F%E5%92%8C%E7%9B%AE%E6%A0%87%E5%9F%9F%E7%9A%84%E8%8A%82%E7%82%B9%E9%83%BD%E5%AD%98%E5%9C%A8%E5%B0%B1%E7%9B%B4%E6%8E%A5%E5%AF%B9%E9%BD%90%26lt%3B%2Ffont%26gt%3B%22%20style%3D%22whiteSpace%3Dwrap%3Bhtml%3D1%3Brounded%3D1%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%221298.74%22%20y%3D%22-990.75%22%20width%3D%22390.01%22%20height%3D%2269.25%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;&amp;nbsp;nodes_tg = torch.cat(tg_nodes_category_first, dim=0)&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;427行&lt;/span&gt;&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;讲节点经行再次拼接，不过这次的话以类别优先&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="1297.4899999999998" y="-664.6" width="390.01" height="69.25" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
