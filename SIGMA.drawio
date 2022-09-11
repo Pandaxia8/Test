@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-09-11T05:11:06.118Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.27" etag="ajBqD407jUI_JiQNyxdj" version="20.3.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-11T05:12:30.277Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.27" etag="6vlHFrYfkSU-fidOI1xO" version="20.3.0" type="github">
   <diagram id="kIxsnDEzaFE8jGhAG0Tv" name="第 1 页">
-    <mxGraphModel dx="2697" dy="2722" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" math="0" shadow="0">
+    <mxGraphModel dx="1805" dy="2244" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -446,7 +446,7 @@
         <mxCell id="u7gNK5loML6lBVQrGU0d-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#000000;strokeWidth=1;fontSize=13;fontColor=#FF3333;" edge="1" parent="1" source="u7gNK5loML6lBVQrGU0d-52" target="u7gNK5loML6lBVQrGU0d-61">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="u7gNK5loML6lBVQrGU0d-52" value="sr_indx.any() or&amp;nbsp;tg_indx.any()&lt;br&gt;375行或者397行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;某个域的节点不存在那么久进行DNC补全&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+        <mxCell id="u7gNK5loML6lBVQrGU0d-52" value="sr_indx.any() or&amp;nbsp;tg_indx.any()&lt;br&gt;377行 或者 400行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;某个域的节点不存在那么久进行DNC补全&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="1717.4899999999998" y="-1290" width="390" height="69.25" as="geometry" />
         </mxCell>
         <mxCell id="u7gNK5loML6lBVQrGU0d-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#000000;strokeWidth=1;fontColor=#000000;" edge="1" parent="1" source="u7gNK5loML6lBVQrGU0d-55" target="u7gNK5loML6lBVQrGU0d-50">
@@ -470,7 +470,7 @@
         <mxCell id="u7gNK5loML6lBVQrGU0d-60" value="否" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#FF3333;strokeWidth=2;fontSize=13;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="1610" y="-1080" width="40" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="u7gNK5loML6lBVQrGU0d-61" value="sr_indx.any() or&amp;nbsp;tg_indx.any()&lt;br&gt;375行或者397行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;某个域的节点不存在那么久进行DNC补全&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+        <mxCell id="u7gNK5loML6lBVQrGU0d-61" value="tg_nodes_c = torch.normal(mean=tg_nodes_c, std=sr_nodes_c.std(0).unsqueeze(0).expand(sr_nodes_c.size())).cuda()&lt;br&gt;387行 或者 411行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;某个域的节点不存在那么久进行DNC补全&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="1717.49" y="-1187" width="390" height="69.25" as="geometry" />
         </mxCell>
       </root>
