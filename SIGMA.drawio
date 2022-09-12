@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-09-12T06:43:15.458Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.33" etag="N19iSG7utlY7ymMTkPYQ" version="20.3.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-12T06:44:23.625Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.33" etag="pn_S5makDkL-EuaxpPXb" version="20.3.0" type="github">
   <diagram id="kIxsnDEzaFE8jGhAG0Tv" name="第 1 页">
     <mxGraphModel dx="1990" dy="2343" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" math="0" shadow="0">
       <root>
@@ -582,7 +582,7 @@
         <mxCell id="T80Ul6aDQPK5XkURaYkn-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;fontColor=#FF6666;" edge="1" parent="1" source="T80Ul6aDQPK5XkURaYkn-23" target="T80Ul6aDQPK5XkURaYkn-24">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="T80Ul6aDQPK5XkURaYkn-23" value="labels, reg_targets = self.compute_targets_for_locations 291行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;和之前一样，计算一下每个特征点需要分配到什么类别&lt;br&gt;需要分配到哪个尺度的特征图中&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+        <mxCell id="T80Ul6aDQPK5XkURaYkn-23" value="M = torch.cat([X_k, Y_k], dim=-1) 62行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;256的维度拼接成512的维度&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="1719.9899999999998" y="-1190.5000000000002" width="387.5" height="69.25" as="geometry" />
         </mxCell>
         <mxCell id="T80Ul6aDQPK5XkURaYkn-24" value="pos_indx = labels[l].reshape(-1) &amp;gt; 0 &lt;br&gt;neg_indx = labels[l].reshape(-1) == 0 368行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;获取一下前景和背景，前景是类别大于0的，背景是类别等于0的&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
