@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-09-12T06:31:15.733Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.33" etag="kxi9OI3F8P5X9Yv-z47D" version="20.3.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-12T06:31:48.728Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.33" etag="yYB8hLs_xlhoxnUtepyP" version="20.3.0" type="github">
   <diagram id="kIxsnDEzaFE8jGhAG0Tv" name="第 1 页">
     <mxGraphModel dx="2062" dy="2382" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" math="0" shadow="0">
       <root>
@@ -570,7 +570,7 @@
         <mxCell id="T80Ul6aDQPK5XkURaYkn-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#000000;strokeWidth=1;fontColor=#000000;" edge="1" parent="1" source="T80Ul6aDQPK5XkURaYkn-19" target="T80Ul6aDQPK5XkURaYkn-21">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="T80Ul6aDQPK5XkURaYkn-19" value="fcos_core -&amp;gt; modeling -&amp;gt; fcos -&amp;gt; loss.py" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffcc99;strokeColor=#36393d;" vertex="1" parent="1">
+        <mxCell id="T80Ul6aDQPK5XkURaYkn-19" value="fcos_core -&amp;gt; layers -&amp;gt; affinity_layer.py" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffcc99;strokeColor=#36393d;" vertex="1" parent="1">
           <mxGeometry x="1776.86" y="-1370.0000000000002" width="273.75" height="50" as="geometry" />
         </mxCell>
         <mxCell id="T80Ul6aDQPK5XkURaYkn-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#000000;strokeWidth=1;fontColor=#000000;" edge="1" parent="1" source="T80Ul6aDQPK5XkURaYkn-21" target="T80Ul6aDQPK5XkURaYkn-23">
