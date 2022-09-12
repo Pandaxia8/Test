@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-09-12T02:56:47.964Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.33" etag="-hvFnFbJI5usHJuuPsAW" version="20.3.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-12T06:04:45.801Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.33" etag="dsHbVaCLZDCta5dPPRXs" version="20.3.0" type="github">
   <diagram id="kIxsnDEzaFE8jGhAG0Tv" name="第 1 页">
-    <mxGraphModel dx="1990" dy="2343" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" math="0" shadow="0">
+    <mxGraphModel dx="2181" dy="2446" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -530,8 +530,14 @@
         <mxCell id="T80Ul6aDQPK5XkURaYkn-5" value="&lt;div style=&quot;text-align: start;&quot;&gt;&lt;/div&gt;&lt;font face=&quot;monospace&quot; color=&quot;#ba0000&quot;&gt;&lt;span style=&quot;font-size: 0px;&quot;&gt;momentum = torch.nn.functional.cosine_similarity(bs.unsqueeze(0), self.sr_seed[cls].unsqueeze(0))&lt;/span&gt;&lt;/font&gt;&lt;div&gt;&lt;/div&gt;momentum = torch.nn.functional.cosine_similarity(bs.unsqueeze(0), self.sr_seed[cls].unsqueeze(0)&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;524行&lt;/span&gt;&lt;br&gt;&lt;div&gt;&lt;font color=&quot;#ff0000&quot;&gt;&lt;b&gt;计算现在的节点和seed之间的相似度作为moment&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;b style=&quot;&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;" style="whiteSpace=wrap;html=1;rounded=1;strokeColor=#b85450;strokeWidth=3;fillColor=#f8cecc;" vertex="1" parent="1">
           <mxGeometry x="1297.48" y="-140" width="390.01" height="70" as="geometry" />
         </mxCell>
+        <mxCell id="T80Ul6aDQPK5XkURaYkn-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="T80Ul6aDQPK5XkURaYkn-7" target="T80Ul6aDQPK5XkURaYkn-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="T80Ul6aDQPK5XkURaYkn-7" value="&lt;div style=&quot;text-align: start;&quot;&gt;&lt;/div&gt;&lt;font face=&quot;monospace&quot; color=&quot;#ba0000&quot;&gt;&lt;span style=&quot;font-size: 0px;&quot;&gt;momentum = torch.nn.functional.cosine_similarity(bs.unsqueeze(0), self.sr_seed[cls].unsqueeze(0))&lt;br&gt;&lt;/span&gt;&lt;/font&gt;self.sr_seed[cls] = self.sr_seed[cls] * momentum + bs * (1.0 - momentum)&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;536行&lt;/span&gt;&lt;br&gt;&lt;div&gt;&lt;font color=&quot;#ff0000&quot;&gt;&lt;b&gt;更新seed，至此bank更新完毕&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;b style=&quot;&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;" style="whiteSpace=wrap;html=1;rounded=1;strokeColor=#b85450;strokeWidth=3;fillColor=#f8cecc;" vertex="1" parent="1">
           <mxGeometry x="1297.48" y="-40" width="390.01" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="T80Ul6aDQPK5XkURaYkn-9" value="&lt;div style=&quot;text-align: start;&quot;&gt;&lt;/div&gt;&lt;font face=&quot;monospace&quot; color=&quot;#ba0000&quot;&gt;&lt;span style=&quot;font-size: 0px;&quot;&gt;momentum = torch.nn.functional.cosine_similarity(bs.unsqueeze(0), self.sr_seed[cls].unsqueeze(0))&lt;br&gt;&lt;/span&gt;&lt;/font&gt;nodes_1, nodes_2 = self._forward_cross_domain_graph(nodes_1, nodes_2) 316&lt;span style=&quot;background-color: initial;&quot;&gt;行&lt;/span&gt;&lt;br&gt;&lt;div&gt;&lt;font color=&quot;#ff0000&quot;&gt;&lt;b&gt;节点之间的跨域交互&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;b style=&quot;&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;" style="whiteSpace=wrap;html=1;rounded=1;strokeColor=#b85450;strokeWidth=3;fillColor=#f8cecc;" vertex="1" parent="1">
+          <mxGeometry x="1297.48" y="60" width="390.01" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
