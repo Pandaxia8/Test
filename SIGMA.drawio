@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-09-12T06:31:55.011Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.33" etag="v3YMAJIC5N16Z58lJFm_" version="20.3.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-12T06:42:45.441Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.33" etag="yR1UbwZGNmdNv0pDZccB" version="20.3.0" type="github">
   <diagram id="kIxsnDEzaFE8jGhAG0Tv" name="第 1 页">
-    <mxGraphModel dx="5263" dy="4097" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" math="0" shadow="0">
+    <mxGraphModel dx="1990" dy="2343" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -576,7 +576,7 @@
         <mxCell id="T80Ul6aDQPK5XkURaYkn-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#000000;strokeWidth=1;fontColor=#000000;" edge="1" parent="1" source="T80Ul6aDQPK5XkURaYkn-21" target="T80Ul6aDQPK5XkURaYkn-23">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="T80Ul6aDQPK5XkURaYkn-21" value="labels = self.prepare_targets(locations, targets) 362行&lt;br&gt;&lt;font color=&quot;#ff6666&quot;&gt;&lt;b&gt;生成图结构&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+        <mxCell id="T80Ul6aDQPK5XkURaYkn-21" value="X = self.project_sr(X)&lt;br&gt;&amp;nbsp;Y = self.project_tg(Y) 54行&lt;br&gt;&lt;font color=&quot;#ff6666&quot;&gt;&lt;b&gt;计算域节点之间的关系，或者相似性？&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="1719.99" y="-1290.0000000000002" width="387.5" height="69.25" as="geometry" />
         </mxCell>
         <mxCell id="T80Ul6aDQPK5XkURaYkn-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;fontColor=#FF6666;" edge="1" parent="1" source="T80Ul6aDQPK5XkURaYkn-23" target="T80Ul6aDQPK5XkURaYkn-24">
