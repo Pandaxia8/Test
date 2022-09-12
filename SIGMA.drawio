@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-09-11T13:02:15.314Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.27" etag="9XSXb3ky_MVnKrvCFmvM" version="20.3.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-12T02:04:13.690Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.33" etag="6ejK0rB9kwfZ9fXUe-Tq" version="20.3.0" type="github">
   <diagram id="kIxsnDEzaFE8jGhAG0Tv" name="第 1 页">
-    <mxGraphModel dx="2253" dy="2484" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" math="0" shadow="0">
+    <mxGraphModel dx="2622" dy="2682" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -169,7 +169,7 @@
         <mxCell id="9VyTqNnY38J_3XrKxKob-79" value="proposals, proposal_losses, _ = &lt;br&gt;model_fcos( images_s, features_s, targets=targets)&amp;nbsp;62行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;特征送入fcos里面获取对应的损失&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="-650" y="-971.02" width="387.5" height="69.25" as="geometry" />
         </mxCell>
-        <mxCell id="u7gNK5loML6lBVQrGU0d-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#FF3333;strokeWidth=2;" edge="1" parent="1" source="9VyTqNnY38J_3XrKxKob-80" target="u7gNK5loML6lBVQrGU0d-2">
+        <mxCell id="u7gNK5loML6lBVQrGU0d-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#FF3333;strokeWidth=2;" parent="1" source="9VyTqNnY38J_3XrKxKob-80" target="u7gNK5loML6lBVQrGU0d-2" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="460" y="-1202" as="targetPoint" />
             <Array as="points">
@@ -181,7 +181,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="u7gNK5loML6lBVQrGU0d-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;" edge="1" parent="1" source="9VyTqNnY38J_3XrKxKob-80" target="u7gNK5loML6lBVQrGU0d-13">
+        <mxCell id="u7gNK5loML6lBVQrGU0d-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;" parent="1" source="9VyTqNnY38J_3XrKxKob-80" target="u7gNK5loML6lBVQrGU0d-13" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="9VyTqNnY38J_3XrKxKob-80" value="score_maps, zeros, _ = model_fcos(images_t, features_t, targets=None)&amp;nbsp;66行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;这次送入的是目标域的特征，但这次不计算损失了，只是对目标域的特征图进行sigmoid激活，相当于判断是前景还是背景&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
@@ -313,34 +313,34 @@
         <mxCell id="9VyTqNnY38J_3XrKxKob-129" value="reg_loss = self.box_reg_loss_func 242行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;中心损失计算直接套用的是BCEloss&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="700.01" y="-770" width="387.5" height="71.4" as="geometry" />
         </mxCell>
-        <mxCell id="u7gNK5loML6lBVQrGU0d-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;" edge="1" parent="1" source="u7gNK5loML6lBVQrGU0d-2" target="u7gNK5loML6lBVQrGU0d-5">
+        <mxCell id="u7gNK5loML6lBVQrGU0d-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;" parent="1" source="u7gNK5loML6lBVQrGU0d-2" target="u7gNK5loML6lBVQrGU0d-5" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="u7gNK5loML6lBVQrGU0d-2" value="fcos_core -&amp;gt; modeling -&amp;gt; fcos -&amp;gt; fcos.py" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffcc99;strokeColor=#36393d;" vertex="1" parent="1">
+        <mxCell id="u7gNK5loML6lBVQrGU0d-2" value="fcos_core -&amp;gt; modeling -&amp;gt; fcos -&amp;gt; fcos.py" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffcc99;strokeColor=#36393d;" parent="1" vertex="1">
           <mxGeometry x="316.89" y="-1157.85" width="273.75" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="u7gNK5loML6lBVQrGU0d-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#000000;strokeWidth=1;" edge="1" parent="1" source="u7gNK5loML6lBVQrGU0d-5" target="u7gNK5loML6lBVQrGU0d-7">
+        <mxCell id="u7gNK5loML6lBVQrGU0d-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#000000;strokeWidth=1;" parent="1" source="u7gNK5loML6lBVQrGU0d-5" target="u7gNK5loML6lBVQrGU0d-7" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="u7gNK5loML6lBVQrGU0d-5" value="box_cls, box_regression, centerness = &lt;br&gt;self.head(features, act_maps) 159行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;特征送入检测头中预测类别和对应中心点的4个参数，并且还有&lt;br&gt;一个额外的centerness预测&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+        <mxCell id="u7gNK5loML6lBVQrGU0d-5" value="box_cls, box_regression, centerness = &lt;br&gt;self.head(features, act_maps) 159行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;特征送入检测头中预测类别和对应中心点的4个参数，并且还有&lt;br&gt;一个额外的centerness预测&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="260.02" y="-1079.6" width="387.5" height="69.25" as="geometry" />
         </mxCell>
-        <mxCell id="u7gNK5loML6lBVQrGU0d-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#000000;strokeWidth=1;" edge="1" parent="1" source="u7gNK5loML6lBVQrGU0d-7" target="u7gNK5loML6lBVQrGU0d-8">
+        <mxCell id="u7gNK5loML6lBVQrGU0d-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#000000;strokeWidth=1;" parent="1" source="u7gNK5loML6lBVQrGU0d-7" target="u7gNK5loML6lBVQrGU0d-8" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="u7gNK5loML6lBVQrGU0d-7" value="locations = self.compute_locations(features) 161行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;计算所有不同层的location的总和，&lt;/font&gt;&lt;font color=&quot;#ff0000&quot;&gt;&lt;b&gt;目前不知道是什么&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+        <mxCell id="u7gNK5loML6lBVQrGU0d-7" value="locations = self.compute_locations(features) 161行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;计算所有不同层的location的总和，&lt;/font&gt;&lt;font color=&quot;#ff0000&quot;&gt;&lt;b&gt;目前不知道是什么&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="260.01" y="-972.8500000000003" width="387.5" height="69.25" as="geometry" />
         </mxCell>
-        <mxCell id="u7gNK5loML6lBVQrGU0d-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;" edge="1" parent="1" source="u7gNK5loML6lBVQrGU0d-8" target="u7gNK5loML6lBVQrGU0d-11">
+        <mxCell id="u7gNK5loML6lBVQrGU0d-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;" parent="1" source="u7gNK5loML6lBVQrGU0d-8" target="u7gNK5loML6lBVQrGU0d-11" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="u7gNK5loML6lBVQrGU0d-8" value="&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22return%20self._forward_train_source%20172%E8%A1%8C%26lt%3Bbr%26gt%3B%26lt%3Bfont%20color%3D%26quot%3B%23ff8000%26quot%3B%26gt%3B%E8%AE%A1%E7%AE%97%E6%BA%90%E5%9F%9F%E7%9A%84%E6%8D%9F%E5%A4%B1%26lt%3Bbr%26gt%3B%26lt%3B%2Ffont%26gt%3B%22%20style%3D%22whiteSpace%3Dwrap%3Bhtml%3D1%3Brounded%3D1%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22260.01%22%20y%3D%22-1384.7700000000002%22%20width%3D%22387.5%22%20height%3D%2269.25%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;&amp;nbsp;return self._forward_target&lt;br&gt;( box_cls, box_regression, centerness )172行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;这里只对分类分数sigmoid，也就是看下是前景还是背景&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+        <mxCell id="u7gNK5loML6lBVQrGU0d-8" value="&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22return%20self._forward_train_source%20172%E8%A1%8C%26lt%3Bbr%26gt%3B%26lt%3Bfont%20color%3D%26quot%3B%23ff8000%26quot%3B%26gt%3B%E8%AE%A1%E7%AE%97%E6%BA%90%E5%9F%9F%E7%9A%84%E6%8D%9F%E5%A4%B1%26lt%3Bbr%26gt%3B%26lt%3B%2Ffont%26gt%3B%22%20style%3D%22whiteSpace%3Dwrap%3Bhtml%3D1%3Brounded%3D1%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22260.01%22%20y%3D%22-1384.7700000000002%22%20width%3D%22387.5%22%20height%3D%2269.25%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;&amp;nbsp;return self._forward_target&lt;br&gt;( box_cls, box_regression, centerness )172行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;这里只对分类分数sigmoid，也就是看下是前景还是背景&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="260.01" y="-867.8500000000003" width="387.5" height="69.25" as="geometry" />
         </mxCell>
-        <mxCell id="u7gNK5loML6lBVQrGU0d-11" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;scores.append(cls_logits.sigmoid().detach())&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;background-color: initial;&quot; color=&quot;#ff8000&quot;&gt;这里只对分类分数sigmoid，也就是看下是前景还是背景&lt;/font&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;align=center;" vertex="1" parent="1">
+        <mxCell id="u7gNK5loML6lBVQrGU0d-11" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;scores.append(cls_logits.sigmoid().detach())&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;background-color: initial;&quot; color=&quot;#ff8000&quot;&gt;这里只对分类分数sigmoid，也就是看下是前景还是背景&lt;/font&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="260.02" y="-767.8500000000003" width="387.5" height="69.25" as="geometry" />
         </mxCell>
-        <mxCell id="u7gNK5loML6lBVQrGU0d-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#FF0000;strokeWidth=2;fontColor=#000000;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="u7gNK5loML6lBVQrGU0d-13" target="u7gNK5loML6lBVQrGU0d-16">
+        <mxCell id="u7gNK5loML6lBVQrGU0d-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#FF0000;strokeWidth=2;fontColor=#000000;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="u7gNK5loML6lBVQrGU0d-13" target="u7gNK5loML6lBVQrGU0d-16" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1480" y="-1790" as="targetPoint" />
             <Array as="points">
@@ -353,30 +353,30 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="u7gNK5loML6lBVQrGU0d-13" value="(features_s, features_t), middle_head_loss = model_middle_head(images, (features_s, features_t), targets=targets, score_maps=score_maps) 70行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+        <mxCell id="u7gNK5loML6lBVQrGU0d-13" value="(features_s, features_t), middle_head_loss = model_middle_head(images, (features_s, features_t), targets=targets, score_maps=score_maps) 70行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="-650" y="-772.15" width="387.5" height="77.85" as="geometry" />
         </mxCell>
-        <mxCell id="u7gNK5loML6lBVQrGU0d-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#000000;strokeWidth=1;fontColor=#000000;" edge="1" parent="1" source="u7gNK5loML6lBVQrGU0d-16" target="u7gNK5loML6lBVQrGU0d-19">
+        <mxCell id="u7gNK5loML6lBVQrGU0d-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#000000;strokeWidth=1;fontColor=#000000;" parent="1" source="u7gNK5loML6lBVQrGU0d-16" target="u7gNK5loML6lBVQrGU0d-19" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="u7gNK5loML6lBVQrGU0d-16" value="fcos_core -&amp;gt; modeling -&amp;gt; fcos -&amp;gt; graph_matching_head.py" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffcc99;strokeColor=#36393d;" vertex="1" parent="1">
+        <mxCell id="u7gNK5loML6lBVQrGU0d-16" value="fcos_core -&amp;gt; modeling -&amp;gt; fcos -&amp;gt; graph_matching_head.py" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffcc99;strokeColor=#36393d;" parent="1" vertex="1">
           <mxGeometry x="1356.87" y="-1770.15" width="273.75" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="u7gNK5loML6lBVQrGU0d-17" value="labels, reg_targets = self.prepare_targets(locations, targets) 197行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;送入gt和locations&lt;/font&gt;&lt;font color=&quot;#ff8000&quot;&gt;，&lt;/font&gt;&lt;font color=&quot;#ff0000&quot;&gt;&lt;b&gt;locations其实就是特征图每个点的位置&lt;/b&gt;&lt;/font&gt;&lt;font color=&quot;#ff8000&quot;&gt;&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+        <mxCell id="u7gNK5loML6lBVQrGU0d-17" value="labels, reg_targets = self.prepare_targets(locations, targets) 197行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;送入gt和locations&lt;/font&gt;&lt;font color=&quot;#ff8000&quot;&gt;，&lt;/font&gt;&lt;font color=&quot;#ff0000&quot;&gt;&lt;b&gt;locations其实就是特征图每个点的位置&lt;/b&gt;&lt;/font&gt;&lt;font color=&quot;#ff8000&quot;&gt;&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="699.99" y="-1688.65" width="387.5" height="69.25" as="geometry" />
         </mxCell>
-        <mxCell id="u7gNK5loML6lBVQrGU0d-18" value="expanded_object_sizes_of_interest = torch.cat(expanded_object_sizes_of_interest, dim=0) 58行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;分配一下框分配到哪个大小的特征图进行计算损失，类似FPN&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+        <mxCell id="u7gNK5loML6lBVQrGU0d-18" value="expanded_object_sizes_of_interest = torch.cat(expanded_object_sizes_of_interest, dim=0) 58行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;分配一下框分配到哪个大小的特征图进行计算损失，类似FPN&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="700" y="-1591.5500000000002" width="387.5" height="69.25" as="geometry" />
         </mxCell>
-        <mxCell id="u7gNK5loML6lBVQrGU0d-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#000000;strokeWidth=1;fontColor=#000000;" edge="1" parent="1" source="u7gNK5loML6lBVQrGU0d-19">
+        <mxCell id="u7gNK5loML6lBVQrGU0d-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#000000;strokeWidth=1;fontColor=#000000;" parent="1" source="u7gNK5loML6lBVQrGU0d-19" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1493.75" y="-1590.65" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="u7gNK5loML6lBVQrGU0d-19" value="features, feat_loss = self._forward_train(images, features, targets, score_maps) 207行&lt;br&gt;&lt;font color=&quot;#ff6666&quot;&gt;&lt;b&gt;这里是干什么的？需要结合论文一起来看&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+        <mxCell id="u7gNK5loML6lBVQrGU0d-19" value="features, feat_loss = self._forward_train(images, features, targets, score_maps) 207行&lt;br&gt;&lt;font color=&quot;#ff6666&quot;&gt;&lt;b&gt;这里是干什么的？需要结合论文一起来看&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="1300" y="-1690.15" width="387.5" height="69.25" as="geometry" />
         </mxCell>
-        <mxCell id="u7gNK5loML6lBVQrGU0d-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#FF3333;strokeWidth=2;fontColor=#FF6666;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="u7gNK5loML6lBVQrGU0d-33">
+        <mxCell id="u7gNK5loML6lBVQrGU0d-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#FF3333;strokeWidth=2;fontColor=#FF6666;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" target="u7gNK5loML6lBVQrGU0d-33" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1940" y="-1790" as="targetPoint" />
             <mxPoint x="1687.5" y="-1555.9310344827586" as="sourcePoint" />
@@ -387,72 +387,72 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="u7gNK5loML6lBVQrGU0d-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#000000;strokeWidth=1;fontColor=#000000;" edge="1" parent="1" source="u7gNK5loML6lBVQrGU0d-33" target="u7gNK5loML6lBVQrGU0d-35">
+        <mxCell id="u7gNK5loML6lBVQrGU0d-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#000000;strokeWidth=1;fontColor=#000000;" parent="1" source="u7gNK5loML6lBVQrGU0d-33" target="u7gNK5loML6lBVQrGU0d-35" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="u7gNK5loML6lBVQrGU0d-33" value="fcos_core -&amp;gt; modeling -&amp;gt; fcos -&amp;gt; loss.py" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffcc99;strokeColor=#36393d;" vertex="1" parent="1">
+        <mxCell id="u7gNK5loML6lBVQrGU0d-33" value="fcos_core -&amp;gt; modeling -&amp;gt; fcos -&amp;gt; loss.py" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffcc99;strokeColor=#36393d;" parent="1" vertex="1">
           <mxGeometry x="1776.87" y="-1770.15" width="273.75" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="u7gNK5loML6lBVQrGU0d-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#000000;strokeWidth=1;fontColor=#000000;" edge="1" parent="1" source="u7gNK5loML6lBVQrGU0d-35" target="u7gNK5loML6lBVQrGU0d-36">
+        <mxCell id="u7gNK5loML6lBVQrGU0d-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#000000;strokeWidth=1;fontColor=#000000;" parent="1" source="u7gNK5loML6lBVQrGU0d-35" target="u7gNK5loML6lBVQrGU0d-36" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="u7gNK5loML6lBVQrGU0d-35" value="labels = self.prepare_targets(locations, targets) 362行&lt;br&gt;&lt;font color=&quot;#ff6666&quot;&gt;&lt;b&gt;生成图结构&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+        <mxCell id="u7gNK5loML6lBVQrGU0d-35" value="labels = self.prepare_targets(locations, targets) 362行&lt;br&gt;&lt;font color=&quot;#ff6666&quot;&gt;&lt;b&gt;生成图结构&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="1720" y="-1690.15" width="387.5" height="69.25" as="geometry" />
         </mxCell>
-        <mxCell id="u7gNK5loML6lBVQrGU0d-40" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;fontColor=#FF6666;" edge="1" parent="1" source="u7gNK5loML6lBVQrGU0d-36" target="u7gNK5loML6lBVQrGU0d-39">
+        <mxCell id="u7gNK5loML6lBVQrGU0d-40" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;fontColor=#FF6666;" parent="1" source="u7gNK5loML6lBVQrGU0d-36" target="u7gNK5loML6lBVQrGU0d-39" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="u7gNK5loML6lBVQrGU0d-36" value="labels, reg_targets = self.compute_targets_for_locations 291行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;和之前一样，计算一下每个特征点需要分配到什么类别&lt;br&gt;需要分配到哪个尺度的特征图中&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+        <mxCell id="u7gNK5loML6lBVQrGU0d-36" value="labels, reg_targets = self.compute_targets_for_locations 291行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;和之前一样，计算一下每个特征点需要分配到什么类别&lt;br&gt;需要分配到哪个尺度的特征图中&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="1719.9999999999998" y="-1590.65" width="387.5" height="69.25" as="geometry" />
         </mxCell>
-        <mxCell id="u7gNK5loML6lBVQrGU0d-42" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;fontColor=#FF6666;" edge="1" parent="1" source="u7gNK5loML6lBVQrGU0d-38" target="u7gNK5loML6lBVQrGU0d-41">
+        <mxCell id="u7gNK5loML6lBVQrGU0d-42" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;fontColor=#FF6666;" parent="1" source="u7gNK5loML6lBVQrGU0d-38" target="u7gNK5loML6lBVQrGU0d-41" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="u7gNK5loML6lBVQrGU0d-38" value="nodes_1, labels_1, weights_1 = self.graph_generator( self.compute_locations(features_s), features_s, targets ) 221行&lt;br&gt;&lt;font color=&quot;#ff6666&quot;&gt;&lt;b&gt;生源域成图结构&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#f8cecc;strokeColor=#FF3333;strokeWidth=3;" vertex="1" parent="1">
+        <mxCell id="u7gNK5loML6lBVQrGU0d-38" value="nodes_1, labels_1, weights_1 = self.graph_generator( self.compute_locations(features_s), features_s, targets ) 221行&lt;br&gt;&lt;font color=&quot;#ff6666&quot;&gt;&lt;b&gt;生源域成图结构&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#f8cecc;strokeColor=#FF3333;strokeWidth=3;" parent="1" vertex="1">
           <mxGeometry x="1299.99" y="-1590.65" width="387.5" height="69.25" as="geometry" />
         </mxCell>
-        <mxCell id="u7gNK5loML6lBVQrGU0d-39" value="pos_indx = labels[l].reshape(-1) &amp;gt; 0 &lt;br&gt;neg_indx = labels[l].reshape(-1) == 0 368行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;获取一下前景和背景，前景是类别大于0的，背景是类别等于0的&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+        <mxCell id="u7gNK5loML6lBVQrGU0d-39" value="pos_indx = labels[l].reshape(-1) &amp;gt; 0 &lt;br&gt;neg_indx = labels[l].reshape(-1) == 0 368行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;获取一下前景和背景，前景是类别大于0的，背景是类别等于0的&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="1719.9899999999998" y="-1489.5500000000002" width="387.5" height="69.25" as="geometry" />
         </mxCell>
-        <mxCell id="u7gNK5loML6lBVQrGU0d-44" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;fontColor=#FF6666;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="u7gNK5loML6lBVQrGU0d-41" target="u7gNK5loML6lBVQrGU0d-45">
+        <mxCell id="u7gNK5loML6lBVQrGU0d-44" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;fontColor=#FF6666;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="u7gNK5loML6lBVQrGU0d-41" target="u7gNK5loML6lBVQrGU0d-45" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1493.758620689655" y="-1384.77" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="u7gNK5loML6lBVQrGU0d-41" value="nodes_1, labels_1, weights_1 = self.graph_generator( self.compute_locations(features_s), features_s, targets ) 224行&lt;br&gt;&lt;font color=&quot;#ff6666&quot;&gt;&lt;b&gt;生目标域成图结构&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#f8cecc;strokeColor=#FF3333;strokeWidth=3;" vertex="1" parent="1">
+        <mxCell id="u7gNK5loML6lBVQrGU0d-41" value="nodes_1, labels_1, weights_1 = self.graph_generator( self.compute_locations(features_s), features_s, targets ) 224行&lt;br&gt;&lt;font color=&quot;#ff6666&quot;&gt;&lt;b&gt;生目标域成图结构&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#f8cecc;strokeColor=#FF3333;strokeWidth=3;" parent="1" vertex="1">
           <mxGeometry x="1300" y="-1490.15" width="387.5" height="69.25" as="geometry" />
         </mxCell>
-        <mxCell id="u7gNK5loML6lBVQrGU0d-47" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;fontColor=#FF6666;" edge="1" parent="1" source="u7gNK5loML6lBVQrGU0d-45" target="u7gNK5loML6lBVQrGU0d-46">
+        <mxCell id="u7gNK5loML6lBVQrGU0d-47" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;fontColor=#FF6666;" parent="1" source="u7gNK5loML6lBVQrGU0d-45" target="u7gNK5loML6lBVQrGU0d-46" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="u7gNK5loML6lBVQrGU0d-45" value="nodes_rev = self.node_dis_2(nodes_rev) 242行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;在原始的节点中加上对抗&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+        <mxCell id="u7gNK5loML6lBVQrGU0d-45" value="nodes_rev = self.node_dis_2(nodes_rev) 242行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;在原始的节点中加上对抗&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="1299.99" y="-1390.32" width="387.5" height="69.25" as="geometry" />
         </mxCell>
-        <mxCell id="u7gNK5loML6lBVQrGU0d-49" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;fontColor=#FF6666;" edge="1" parent="1" source="u7gNK5loML6lBVQrGU0d-46" target="u7gNK5loML6lBVQrGU0d-48">
+        <mxCell id="u7gNK5loML6lBVQrGU0d-49" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;fontColor=#FF6666;" parent="1" source="u7gNK5loML6lBVQrGU0d-46" target="u7gNK5loML6lBVQrGU0d-48" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="u7gNK5loML6lBVQrGU0d-46" value="nodes_rev = self.node_dis_2(nodes_rev) 259行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;对源域和目标域节点进行一个MLP映射&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+        <mxCell id="u7gNK5loML6lBVQrGU0d-46" value="nodes_rev = self.node_dis_2(nodes_rev) 259行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;对源域和目标域节点进行一个MLP映射&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="1299.99" y="-1290" width="387.5" height="69.25" as="geometry" />
         </mxCell>
-        <mxCell id="u7gNK5loML6lBVQrGU0d-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#000000;strokeWidth=1;fontColor=#000000;" edge="1" parent="1" source="u7gNK5loML6lBVQrGU0d-48" target="u7gNK5loML6lBVQrGU0d-55">
+        <mxCell id="u7gNK5loML6lBVQrGU0d-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#000000;strokeWidth=1;fontColor=#000000;" parent="1" source="u7gNK5loML6lBVQrGU0d-48" target="u7gNK5loML6lBVQrGU0d-55" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="u7gNK5loML6lBVQrGU0d-48" value="self._forward_preprocessing_source_target 268行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;对节点进行语义补全，对应文章中的DNC&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+        <mxCell id="u7gNK5loML6lBVQrGU0d-48" value="self._forward_preprocessing_source_target 268行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;对节点进行语义补全，对应文章中的DNC&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="1300" y="-1187" width="387.5" height="69.25" as="geometry" />
         </mxCell>
-        <mxCell id="u7gNK5loML6lBVQrGU0d-68" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;fontSize=13;fontColor=#FF3333;" edge="1" parent="1" source="u7gNK5loML6lBVQrGU0d-50" target="u7gNK5loML6lBVQrGU0d-67">
+        <mxCell id="u7gNK5loML6lBVQrGU0d-68" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;fontSize=13;fontColor=#FF3333;" parent="1" source="u7gNK5loML6lBVQrGU0d-50" target="u7gNK5loML6lBVQrGU0d-67" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="u7gNK5loML6lBVQrGU0d-50" value="if sr_indx.any() and tg_indx.any(): 361行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;源域和目标域的节点都存在就直接对齐&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+        <mxCell id="u7gNK5loML6lBVQrGU0d-50" value="if sr_indx.any() and tg_indx.any(): 361行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;源域和目标域的节点都存在就直接对齐&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="1297.49" y="-767.85" width="390.01" height="69.25" as="geometry" />
         </mxCell>
-        <mxCell id="u7gNK5loML6lBVQrGU0d-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#000000;strokeWidth=1;fontSize=13;fontColor=#FF3333;" edge="1" parent="1" source="u7gNK5loML6lBVQrGU0d-52" target="u7gNK5loML6lBVQrGU0d-61">
+        <mxCell id="u7gNK5loML6lBVQrGU0d-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#000000;strokeWidth=1;fontSize=13;fontColor=#FF3333;" parent="1" source="u7gNK5loML6lBVQrGU0d-52" target="u7gNK5loML6lBVQrGU0d-61" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="u7gNK5loML6lBVQrGU0d-52" value="sr_indx.any() or&amp;nbsp;tg_indx.any()&lt;br&gt;377行 或者 400行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;某个域的节点不存在那么久进行DNC补全&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+        <mxCell id="u7gNK5loML6lBVQrGU0d-52" value="sr_indx.any() or&amp;nbsp;tg_indx.any()&lt;br&gt;377行 或者 400行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;某个域的节点不存在那么久进行DNC补全&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="1299.9999999999998" y="-990" width="390" height="69.25" as="geometry" />
         </mxCell>
-        <mxCell id="u7gNK5loML6lBVQrGU0d-69" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;fontSize=13;fontColor=#FF3333;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="u7gNK5loML6lBVQrGU0d-55" target="u7gNK5loML6lBVQrGU0d-52">
+        <mxCell id="u7gNK5loML6lBVQrGU0d-69" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;fontSize=13;fontColor=#FF3333;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="u7gNK5loML6lBVQrGU0d-55" target="u7gNK5loML6lBVQrGU0d-52" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1494" y="-1010" as="targetPoint" />
             <Array as="points">
@@ -462,7 +462,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="u7gNK5loML6lBVQrGU0d-73" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;fontSize=13;fontColor=#FF3333;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="u7gNK5loML6lBVQrGU0d-55" target="u7gNK5loML6lBVQrGU0d-50">
+        <mxCell id="u7gNK5loML6lBVQrGU0d-73" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;fontSize=13;fontColor=#FF3333;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="u7gNK5loML6lBVQrGU0d-55" target="u7gNK5loML6lBVQrGU0d-50" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1340" y="-780" as="targetPoint" />
             <mxPoint x="1410" y="-1056" as="sourcePoint" />
@@ -473,16 +473,16 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="u7gNK5loML6lBVQrGU0d-55" value="&lt;font color=&quot;#000000&quot;&gt;所有的域的&lt;br&gt;节点都存在&lt;/font&gt;" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;strokeColor=#000000;fontColor=#FF6666;" vertex="1" parent="1">
+        <mxCell id="u7gNK5loML6lBVQrGU0d-55" value="&lt;font color=&quot;#000000&quot;&gt;所有的域的&lt;br&gt;节点都存在&lt;/font&gt;" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;strokeColor=#000000;fontColor=#FF6666;" parent="1" vertex="1">
           <mxGeometry x="1423.75" y="-1091.3999999999999" width="140" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="u7gNK5loML6lBVQrGU0d-58" value="是" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#FF3333;strokeWidth=2;fontSize=13;fontStyle=1" vertex="1" parent="1">
+        <mxCell id="u7gNK5loML6lBVQrGU0d-58" value="是" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#FF3333;strokeWidth=2;fontSize=13;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="1383.75" y="-1091.4" width="40" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="u7gNK5loML6lBVQrGU0d-60" value="否" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#FF3333;strokeWidth=2;fontSize=13;fontStyle=1" vertex="1" parent="1">
+        <mxCell id="u7gNK5loML6lBVQrGU0d-60" value="否" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#FF3333;strokeWidth=2;fontSize=13;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="1563.75" y="-1080" width="40" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="u7gNK5loML6lBVQrGU0d-84" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;fontSize=13;fontColor=#FF0000;entryX=1.001;entryY=0.546;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="u7gNK5loML6lBVQrGU0d-61" target="u7gNK5loML6lBVQrGU0d-67">
+        <mxCell id="u7gNK5loML6lBVQrGU0d-84" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;fontSize=13;fontColor=#FF0000;entryX=1.001;entryY=0.546;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="u7gNK5loML6lBVQrGU0d-61" target="u7gNK5loML6lBVQrGU0d-67" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1710" y="-630" as="targetPoint" />
             <Array as="points">
@@ -491,28 +491,28 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="u7gNK5loML6lBVQrGU0d-61" value="tg_nodes_c = torch.normal(mean=tg_nodes_c, std=sr_nodes_c.std(0).unsqueeze(0).expand(sr_nodes_c.size())).cuda()&lt;br&gt;387行 或者 411行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;利用memory bank中的均值，以及现在的节点的方差进行构建虚拟节点&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+        <mxCell id="u7gNK5loML6lBVQrGU0d-61" value="tg_nodes_c = torch.normal(mean=tg_nodes_c, std=sr_nodes_c.std(0).unsqueeze(0).expand(sr_nodes_c.size())).cuda()&lt;br&gt;387行 或者 411行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;利用memory bank中的均值，以及现在的节点的方差进行构建虚拟节点&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="1300" y="-887" width="390" height="69.25" as="geometry" />
         </mxCell>
-        <mxCell id="u7gNK5loML6lBVQrGU0d-80" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;fontSize=13;fontColor=#FF3333;" edge="1" parent="1" source="u7gNK5loML6lBVQrGU0d-67" target="u7gNK5loML6lBVQrGU0d-79">
+        <mxCell id="u7gNK5loML6lBVQrGU0d-80" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;fontSize=13;fontColor=#FF3333;" parent="1" source="u7gNK5loML6lBVQrGU0d-67" target="u7gNK5loML6lBVQrGU0d-79" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="u7gNK5loML6lBVQrGU0d-67" value="&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22if%20sr_indx.any()%20and%20tg_indx.any()%3A%20361%E8%A1%8C%26lt%3Bbr%26gt%3B%26lt%3Bfont%20color%3D%26quot%3B%23ff8000%26quot%3B%26gt%3B%E6%BA%90%E5%9F%9F%E5%92%8C%E7%9B%AE%E6%A0%87%E5%9F%9F%E7%9A%84%E8%8A%82%E7%82%B9%E9%83%BD%E5%AD%98%E5%9C%A8%E5%B0%B1%E7%9B%B4%E6%8E%A5%E5%AF%B9%E9%BD%90%26lt%3B%2Ffont%26gt%3B%22%20style%3D%22whiteSpace%3Dwrap%3Bhtml%3D1%3Brounded%3D1%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%221298.74%22%20y%3D%22-990.75%22%20width%3D%22390.01%22%20height%3D%2269.25%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;&amp;nbsp;nodes_tg = torch.cat(tg_nodes_category_first, dim=0)&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;427行&lt;/span&gt;&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;讲节点经行再次拼接，不过这次的话以类别优先&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+        <mxCell id="u7gNK5loML6lBVQrGU0d-67" value="&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22if%20sr_indx.any()%20and%20tg_indx.any()%3A%20361%E8%A1%8C%26lt%3Bbr%26gt%3B%26lt%3Bfont%20color%3D%26quot%3B%23ff8000%26quot%3B%26gt%3B%E6%BA%90%E5%9F%9F%E5%92%8C%E7%9B%AE%E6%A0%87%E5%9F%9F%E7%9A%84%E8%8A%82%E7%82%B9%E9%83%BD%E5%AD%98%E5%9C%A8%E5%B0%B1%E7%9B%B4%E6%8E%A5%E5%AF%B9%E9%BD%90%26lt%3B%2Ffont%26gt%3B%22%20style%3D%22whiteSpace%3Dwrap%3Bhtml%3D1%3Brounded%3D1%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%221298.74%22%20y%3D%22-990.75%22%20width%3D%22390.01%22%20height%3D%2269.25%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;&amp;nbsp;nodes_tg = torch.cat(tg_nodes_category_first, dim=0)&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;427行&lt;/span&gt;&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;讲节点经行再次拼接，不过这次的话以类别优先&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="1297.4899999999998" y="-667.6" width="390.01" height="69.25" as="geometry" />
         </mxCell>
-        <mxCell id="u7gNK5loML6lBVQrGU0d-82" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;fontSize=13;fontColor=#FF0000;" edge="1" parent="1" source="u7gNK5loML6lBVQrGU0d-79" target="u7gNK5loML6lBVQrGU0d-81">
+        <mxCell id="u7gNK5loML6lBVQrGU0d-82" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;fontSize=13;fontColor=#FF0000;" parent="1" source="u7gNK5loML6lBVQrGU0d-79" target="u7gNK5loML6lBVQrGU0d-81" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="u7gNK5loML6lBVQrGU0d-79" value="&lt;div style=&quot;text-align: start;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 0px;&quot;&gt;&lt;font face=&quot;monospace&quot; color=&quot;rgba(0, 0, 0, 0)&quot;&gt;nodes_1, edges_1 = self._forward_intra_domain_graph(nodes_1)&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;nodes_1, edges_1 = self._forward_intra_domain_graph(nodes_1)&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;281&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;行&lt;/span&gt;&lt;/div&gt;&lt;b style=&quot;&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;分别对源域和目标域的节点进行边的建模&lt;br&gt;（直接使用多头注意力机制来获取，edges其实就是一个注意力矩阵）&lt;br&gt;&lt;/font&gt;&lt;/b&gt;" style="whiteSpace=wrap;html=1;rounded=1;strokeColor=#b85450;strokeWidth=3;fillColor=#f8cecc;" vertex="1" parent="1">
+        <mxCell id="u7gNK5loML6lBVQrGU0d-79" value="&lt;div style=&quot;text-align: start;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 0px;&quot;&gt;&lt;font face=&quot;monospace&quot; color=&quot;rgba(0, 0, 0, 0)&quot;&gt;nodes_1, edges_1 = self._forward_intra_domain_graph(nodes_1)&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;nodes_1, edges_1 = self._forward_intra_domain_graph(nodes_1)&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;281&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;行&lt;/span&gt;&lt;/div&gt;&lt;b style=&quot;&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;分别对源域和目标域的节点进行边的建模&lt;br&gt;（直接使用多头注意力机制来获取，edges其实就是一个注意力矩阵）&lt;br&gt;&lt;/font&gt;&lt;/b&gt;" style="whiteSpace=wrap;html=1;rounded=1;strokeColor=#b85450;strokeWidth=3;fillColor=#f8cecc;" parent="1" vertex="1">
           <mxGeometry x="1297.4799999999998" y="-567" width="390.01" height="69.25" as="geometry" />
         </mxCell>
-        <mxCell id="u7gNK5loML6lBVQrGU0d-86" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;fontSize=13;fontColor=#FF0000;" edge="1" parent="1" source="u7gNK5loML6lBVQrGU0d-81" target="u7gNK5loML6lBVQrGU0d-85">
+        <mxCell id="u7gNK5loML6lBVQrGU0d-86" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;fontSize=13;fontColor=#FF0000;" parent="1" source="u7gNK5loML6lBVQrGU0d-81" target="u7gNK5loML6lBVQrGU0d-85" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="u7gNK5loML6lBVQrGU0d-81" value="&lt;div style=&quot;text-align: start;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 0px;&quot;&gt;&lt;font face=&quot;monospace&quot; color=&quot;#ba0000&quot;&gt;self.update_seed(nodes_1, labels_1, nodes_2, labels_2)&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;self.update_seed(nodes_1, labels_1, nodes_2, labels_2)&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;285&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;行&lt;/span&gt;&lt;/div&gt;&lt;b style=&quot;&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;更新memory bank矩阵&lt;br&gt;&lt;/font&gt;&lt;/b&gt;" style="whiteSpace=wrap;html=1;rounded=1;strokeColor=#b85450;strokeWidth=3;fillColor=#f8cecc;" vertex="1" parent="1">
+        <mxCell id="u7gNK5loML6lBVQrGU0d-81" value="&lt;div style=&quot;text-align: start;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 0px;&quot;&gt;&lt;font face=&quot;monospace&quot; color=&quot;#ba0000&quot;&gt;self.update_seed(nodes_1, labels_1, nodes_2, labels_2)&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;self.update_seed(nodes_1, labels_1, nodes_2, labels_2)&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;285&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;行&lt;/span&gt;&lt;/div&gt;&lt;b style=&quot;&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;更新memory bank矩阵&lt;br&gt;&lt;/font&gt;&lt;/b&gt;" style="whiteSpace=wrap;html=1;rounded=1;strokeColor=#b85450;strokeWidth=3;fillColor=#f8cecc;" parent="1" vertex="1">
           <mxGeometry x="1297.4799999999996" y="-464" width="390.01" height="69.25" as="geometry" />
         </mxCell>
-        <mxCell id="u7gNK5loML6lBVQrGU0d-85" value="&lt;div style=&quot;text-align: start;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 0px;&quot;&gt;&lt;font face=&quot;monospace&quot; color=&quot;#ba0000&quot;&gt;self.update_seed(nodes_1, labels_1, nodes_2, labels_2)&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;self.update_seed(nodes_1, labels_1, nodes_2, labels_2)&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;285&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;行&lt;/span&gt;&lt;/div&gt;&lt;b style=&quot;&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;更新memory bank矩阵&lt;br&gt;&lt;/font&gt;&lt;/b&gt;" style="whiteSpace=wrap;html=1;rounded=1;strokeColor=#b85450;strokeWidth=3;fillColor=#f8cecc;" vertex="1" parent="1">
+        <mxCell id="u7gNK5loML6lBVQrGU0d-85" value="&lt;div style=&quot;text-align: start;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 0px;&quot;&gt;&lt;font face=&quot;monospace&quot; color=&quot;#ba0000&quot;&gt;self.update_seed(nodes_1, labels_1, nodes_2, labels_2)&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;self.update_seed(nodes_1, labels_1, nodes_2, labels_2)&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;521&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;行&lt;/span&gt;&lt;/div&gt;&lt;b style=&quot;&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;定义谱聚类矩阵&lt;br&gt;&lt;/font&gt;&lt;/b&gt;" style="whiteSpace=wrap;html=1;rounded=1;strokeColor=#b85450;strokeWidth=3;fillColor=#f8cecc;" parent="1" vertex="1">
           <mxGeometry x="1297.4799999999996" y="-360" width="390.01" height="69.25" as="geometry" />
         </mxCell>
       </root>
