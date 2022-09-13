@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-09-13T02:35:42.438Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.33" etag="J9et-IcFwsAkrPBKkngo" version="20.3.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-13T02:52:14.214Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.33" etag="_6P9rhV2IA3zE_C81ud2" version="20.3.0" type="github">
   <diagram id="kIxsnDEzaFE8jGhAG0Tv" name="第 1 页">
-    <mxGraphModel dx="1854" dy="2266" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" math="0" shadow="0">
+    <mxGraphModel dx="2368" dy="2539" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -125,16 +125,16 @@
         <mxCell id="9VyTqNnY38J_3XrKxKob-47" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;" parent="1" source="9VyTqNnY38J_3XrKxKob-44" target="9VyTqNnY38J_3XrKxKob-46" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="9VyTqNnY38J_3XrKxKob-44" value="if cfg.MODEL.ADV.USE_DIS_GLOBAL: 275行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;为backbone不同特征层建立鉴别器&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" parent="1" vertex="1">
+        <mxCell id="9VyTqNnY38J_3XrKxKob-44" value="if cfg.MODEL.ADV.USE_DIS_GLOBAL: 73行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;为backbone不同特征层建立鉴别器&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" parent="1" vertex="1">
           <mxGeometry x="-650" y="-1426.4" width="387.5" height="60" as="geometry" />
         </mxCell>
         <mxCell id="9VyTqNnY38J_3XrKxKob-49" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;" parent="1" source="9VyTqNnY38J_3XrKxKob-46" target="9VyTqNnY38J_3XrKxKob-48" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="9VyTqNnY38J_3XrKxKob-46" value="data_loader[&quot;source&quot;] = make_data_loader_source 564行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;为数据集建立data_loader&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+        <mxCell id="9VyTqNnY38J_3XrKxKob-46" value="data_loader[&quot;source&quot;] = make_data_loader_source 181行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;为数据集建立data_loader&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="-650" y="-1341.4" width="387.5" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="9VyTqNnY38J_3XrKxKob-48" value="do_train(MODEL,data_loader,optimizer,scheduler,checkpointer,device,&lt;br&gt;checkpoint_period,arguments,cfg,distributed,meters,) 601行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;开始训练&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+        <mxCell id="9VyTqNnY38J_3XrKxKob-48" value="do_train(MODEL,data_loader,optimizer,scheduler,checkpointer,device,&lt;br&gt;checkpoint_period,arguments,cfg,distributed,meters,) 218行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;开始训练&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="-650" y="-1261.4" width="387.5" height="60" as="geometry" />
         </mxCell>
         <mxCell id="9VyTqNnY38J_3XrKxKob-76" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#000000;strokeWidth=1;fontSize=15;fontColor=#000000;" parent="1" source="9VyTqNnY38J_3XrKxKob-63" target="9VyTqNnY38J_3XrKxKob-65" edge="1">
@@ -219,7 +219,7 @@
         <mxCell id="9VyTqNnY38J_3XrKxKob-98" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;fontSize=15;fontColor=#FF0000;" parent="1" source="9VyTqNnY38J_3XrKxKob-95" target="9VyTqNnY38J_3XrKxKob-97" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="9VyTqNnY38J_3XrKxKob-95" value="locations_per_level = self.compute_locations_per_level 229行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;获取单独层的localtion&lt;/font&gt;&lt;font color=&quot;#ff8000&quot;&gt;，&lt;/font&gt;&lt;font color=&quot;#ff0000&quot;&gt;&lt;b&gt;获取每个尺度的特征图的特征点&lt;/b&gt;&lt;/font&gt;&lt;font color=&quot;#ff8000&quot;&gt;&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+        <mxCell id="9VyTqNnY38J_3XrKxKob-95" value="locations_per_level = self.compute_locations_per_level 227行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;获取单独层的localtion&lt;/font&gt;&lt;font color=&quot;#ff8000&quot;&gt;，&lt;/font&gt;&lt;font color=&quot;#ff0000&quot;&gt;&lt;b&gt;获取每个尺度的特征图的特征点&lt;/b&gt;&lt;/font&gt;&lt;font color=&quot;#ff8000&quot;&gt;&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="260" y="-1489.5500000000002" width="387.5" height="69.25" as="geometry" />
         </mxCell>
         <mxCell id="9VyTqNnY38J_3XrKxKob-100" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;fontSize=15;fontColor=#FF0000;" parent="1" source="9VyTqNnY38J_3XrKxKob-97" target="9VyTqNnY38J_3XrKxKob-99" edge="1">
@@ -269,13 +269,13 @@
         <mxCell id="9VyTqNnY38J_3XrKxKob-109" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;fontSize=15;fontColor=#FF0000;" parent="1" source="9VyTqNnY38J_3XrKxKob-110" target="9VyTqNnY38J_3XrKxKob-111" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="9VyTqNnY38J_3XrKxKob-110" value="is_in_boxes = reg_targets_per_im.min(dim=2)[0] &amp;gt; 0 106行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;过滤掉那些不在框内的点，其实就是将点分配到GT里面&lt;/font&gt;&lt;font color=&quot;#ff8000&quot;&gt;&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+        <mxCell id="9VyTqNnY38J_3XrKxKob-110" value="is_in_boxes = reg_targets_per_im.min(dim=2)[0] &amp;gt; 0 111行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;过滤掉那些不在框内的点，其实就是将点分配到GT里面&lt;/font&gt;&lt;font color=&quot;#ff8000&quot;&gt;&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="700.01" y="-1384.7700000000002" width="387.5" height="69.25" as="geometry" />
         </mxCell>
         <mxCell id="9VyTqNnY38J_3XrKxKob-116" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;fontSize=15;fontColor=#FF3333;" parent="1" source="9VyTqNnY38J_3XrKxKob-111" target="9VyTqNnY38J_3XrKxKob-115" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="9VyTqNnY38J_3XrKxKob-111" value="max_reg_targets_per_im = reg_targets_per_im.max(dim=2)[0] 108行&lt;br&gt;locations_to_gt_area.min(dim=1) 122行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;根据中心点到框四条边的max值，作为分配特征尺度策略&lt;br&gt;并且如果有的点被多个框所包含，选择面积最小的&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+        <mxCell id="9VyTqNnY38J_3XrKxKob-111" value="max_reg_targets_per_im = reg_targets_per_im.max(dim=2)[0] 115行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;根据中心点到框四条边的max值，作为分配特征尺度策略&lt;br&gt;并且如果有的点被多个框所包含，选择面积最小的&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="700.01" y="-1281.4" width="387.5" height="71.4" as="geometry" />
         </mxCell>
         <mxCell id="9VyTqNnY38J_3XrKxKob-113" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;strokeWidth=1;fontSize=15;fontColor=#FF3333;size=0.5;" parent="1" vertex="1">
@@ -287,13 +287,13 @@
         <mxCell id="9VyTqNnY38J_3XrKxKob-118" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;fontSize=15;fontColor=#FF3333;" parent="1" source="9VyTqNnY38J_3XrKxKob-115" target="9VyTqNnY38J_3XrKxKob-117" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="9VyTqNnY38J_3XrKxKob-115" value="labels_per_im = labels_per_im[locations_to_gt_inds] labels_per_im[locations_to_min_area == INF] = 0&amp;nbsp;126行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;根据回归标签的情况，再次对类别标签进行一个筛选&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+        <mxCell id="9VyTqNnY38J_3XrKxKob-115" value="labels_per_im = labels_per_im[locations_to_gt_inds] labels_per_im[locations_to_min_area == INF] = 0&amp;nbsp;130行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;根据回归标签的情况，再次对类别标签进行一个筛选&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="700" y="-1180" width="387.5" height="71.4" as="geometry" />
         </mxCell>
         <mxCell id="9VyTqNnY38J_3XrKxKob-120" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;fontSize=15;fontColor=#FF3333;" parent="1" source="9VyTqNnY38J_3XrKxKob-117" target="9VyTqNnY38J_3XrKxKob-119" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="9VyTqNnY38J_3XrKxKob-117" value="for level in range(len(points)): 73行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;根对一个batch里面的图片，尺度相同的全部cat在一起（5个尺度）&lt;br&gt;尺度优先？&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+        <mxCell id="9VyTqNnY38J_3XrKxKob-117" value="for level in range(len(points)): 76行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;根对一个batch里面的图片，尺度相同的全部cat在一起（5个尺度）&lt;br&gt;尺度优先？&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="700" y="-1080" width="387.5" height="71.4" as="geometry" />
         </mxCell>
         <mxCell id="9VyTqNnY38J_3XrKxKob-122" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1;fontSize=15;fontColor=#FF3333;" parent="1" source="9VyTqNnY38J_3XrKxKob-119" target="9VyTqNnY38J_3XrKxKob-121" edge="1">
@@ -353,7 +353,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="u7gNK5loML6lBVQrGU0d-13" value="(features_s, features_t), middle_head_loss = model_middle_head(images, (features_s, features_t), targets=targets, score_maps=score_maps) 70行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+        <mxCell id="u7gNK5loML6lBVQrGU0d-13" value="(features_s, features_t), middle_head_loss = model_middle_head(images, (features_s, features_t), targets=targets, score_maps=score_maps) 70行&lt;font color=&quot;#ff8000&quot;&gt;&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="-650" y="-772.15" width="387.5" height="77.85" as="geometry" />
         </mxCell>
         <mxCell id="u7gNK5loML6lBVQrGU0d-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#000000;strokeWidth=1;fontColor=#000000;" parent="1" source="u7gNK5loML6lBVQrGU0d-16" target="u7gNK5loML6lBVQrGU0d-19" edge="1">
@@ -362,7 +362,7 @@
         <mxCell id="u7gNK5loML6lBVQrGU0d-16" value="fcos_core -&amp;gt; modeling -&amp;gt; fcos -&amp;gt; graph_matching_head.py" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffcc99;strokeColor=#36393d;" parent="1" vertex="1">
           <mxGeometry x="1356.87" y="-1770.15" width="273.75" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="u7gNK5loML6lBVQrGU0d-17" value="labels, reg_targets = self.prepare_targets(locations, targets) 197行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;送入gt和locations&lt;/font&gt;&lt;font color=&quot;#ff8000&quot;&gt;，&lt;/font&gt;&lt;font color=&quot;#ff0000&quot;&gt;&lt;b&gt;locations其实就是特征图每个点的位置&lt;/b&gt;&lt;/font&gt;&lt;font color=&quot;#ff8000&quot;&gt;&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+        <mxCell id="u7gNK5loML6lBVQrGU0d-17" value="labels, reg_targets = self.prepare_targets(locations, targets) 200行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;送入gt和locations&lt;/font&gt;&lt;font color=&quot;#ff8000&quot;&gt;，&lt;/font&gt;&lt;font color=&quot;#ff0000&quot;&gt;&lt;b&gt;locations其实就是特征图每个点的位置&lt;/b&gt;&lt;/font&gt;&lt;font color=&quot;#ff8000&quot;&gt;&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="699.99" y="-1688.65" width="387.5" height="69.25" as="geometry" />
         </mxCell>
         <mxCell id="u7gNK5loML6lBVQrGU0d-18" value="expanded_object_sizes_of_interest = torch.cat(expanded_object_sizes_of_interest, dim=0) 58行&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;分配一下框分配到哪个大小的特征图进行计算损失，类似FPN&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
