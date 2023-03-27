@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-03-27T03:10:37.935Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.0.0" etag="qwy2jZBFvlL825aproBy" version="21.1.1" type="github">
+<mxfile host="app.diagrams.net" modified="2023-03-27T03:10:59.722Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.0.0" etag="BYJP8hbq-B42BuZu3hsC" version="21.1.1" type="github">
   <diagram id="cp2CzAZKEZPghFZQ-joy" name="第 1 页">
-    <mxGraphModel dx="1349" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" math="0" shadow="0">
+    <mxGraphModel dx="1888" dy="980" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -34,7 +34,7 @@
         <mxCell id="iZZFebuZpYIs87GABAeR-13" value="ROI" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontSize=27;fontStyle=0" parent="1" vertex="1">
           <mxGeometry x="896" y="50" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="iZZFebuZpYIs87GABAeR-14" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;ubteacher modeling roi_heads 164行&lt;/span&gt;&lt;br&gt;self.proposal_matcher(match_quality_matrix)&lt;br&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;计算和Ground truth IOU, 值大于0.5的作为正样本&lt;/span&gt;&lt;br&gt;&lt;font style=&quot;font-size: 18px;&quot; color=&quot;#ff3333&quot;&gt;RPN 和 ROI 都有采样的做法&lt;br&gt;但是RPN是阈值设为0.7 计算损失&lt;br&gt;ROI 是设置0.5作为阈值&lt;br&gt;&lt;/font&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;font color=&quot;#ff3333&quot;&gt;matched_labels 只包含 0和1&lt;/font&gt;&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;返回的参数分别包括IOU最大的ID，以及正负样本的标签&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontStyle=0;" parent="1" vertex="1">
+        <mxCell id="iZZFebuZpYIs87GABAeR-14" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;ubteacher modeling roi_heads 164行&lt;br&gt;self.proposal_matcher(match_quality_matrix)&lt;br&gt;计算和Ground truth IOU, 值大于0.5的作为正样本&lt;br&gt;&lt;font style=&quot;font-size: 18px;&quot; color=&quot;#ff3333&quot;&gt;RPN 和 ROI 都有采样的做法&lt;br&gt;但是RPN是阈值设为0.7 计算损失&lt;br&gt;ROI 是设置0.5作为阈值&lt;br&gt;&lt;/font&gt;&lt;font style=&quot;font-size: 18px;&quot; color=&quot;#ff3333&quot;&gt;matched_labels 只包含 0和1&lt;/font&gt;&lt;br&gt;返回的参数分别包括IOU最大的ID，以及正负样本的标签&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontStyle=0;" parent="1" vertex="1">
           <mxGeometry x="696" y="351" width="470" height="219" as="geometry" />
         </mxCell>
         <mxCell id="iZZFebuZpYIs87GABAeR-15" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;ubteacher modeling roi_heads 167行&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;self._sample_proposals()&lt;br&gt;从正样本中挑选128个作为正样本&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;从负样本中挑选384个作为负样本&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontStyle=0;" parent="1" vertex="1">
