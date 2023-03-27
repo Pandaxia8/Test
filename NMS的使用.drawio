@@ -1,67 +1,67 @@
-<mxfile host="app.diagrams.net" modified="2022-10-02T11:44:00.912Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.53" etag="VBr9BfhFW8G3A8bND8_f" version="20.3.1" type="github">
+<mxfile host="app.diagrams.net" modified="2023-03-27T03:02:14.869Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.0.0" etag="nM0AbuM73Bt6Q7YJrd_S" version="21.1.1" type="github">
   <diagram id="cp2CzAZKEZPghFZQ-joy" name="第 1 页">
-    <mxGraphModel dx="1634" dy="866" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" math="0" shadow="0">
+    <mxGraphModel dx="1666" dy="865" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="iZZFebuZpYIs87GABAeR-6" value="" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Tahoma;fontSize=18;" parent="1" vertex="1">
+        <mxCell id="iZZFebuZpYIs87GABAeR-6" value="" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=18;fontStyle=0" parent="1" vertex="1">
           <mxGeometry x="70" y="20" width="550" height="580" as="geometry" />
         </mxCell>
-        <mxCell id="iZZFebuZpYIs87GABAeR-1" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;rcnn 311&lt;br&gt;self.proposal_generator&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Tahoma;fontStyle=1;" parent="1" vertex="1">
+        <mxCell id="iZZFebuZpYIs87GABAeR-1" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;rcnn 311&lt;br&gt;self.proposal_generator&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontStyle=0;" parent="1" vertex="1">
           <mxGeometry x="205" y="110" width="280" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="iZZFebuZpYIs87GABAeR-2" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;ubteacher modeling rpn.py 61&lt;br&gt;proposals = self.predict_proposals&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Tahoma;fontStyle=1;" parent="1" vertex="1">
+        <mxCell id="iZZFebuZpYIs87GABAeR-2" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;ubteacher modeling rpn.py 61&lt;br&gt;proposals = self.predict_proposals&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontStyle=0;" parent="1" vertex="1">
           <mxGeometry x="150" y="200" width="390" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="iZZFebuZpYIs87GABAeR-3" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;d2 modeling proposal_generator rpn.py 504&lt;br&gt;find_top_rpn_proposals&lt;br&gt;RPN的采样时从anchor中采样&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Tahoma;fontStyle=1;" parent="1" vertex="1">
+        <mxCell id="iZZFebuZpYIs87GABAeR-3" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;d2 modeling proposal_generator rpn.py 504&lt;br&gt;find_top_rpn_proposals&lt;br&gt;RPN的采样时从anchor中采样&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontStyle=0;" parent="1" vertex="1">
           <mxGeometry x="112.5" y="290" width="465" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="iZZFebuZpYIs87GABAeR-4" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;d2 modeling proposal_generator prpposal_utils.py 122&lt;br&gt;batched_nms&lt;br&gt;先计算损失，再NMS&lt;br&gt;这里的NMS有点特殊，RPN的分数是直接使用未激活的&lt;br&gt;RPN使用原本的NMS，但是ROI的使用自定义的NMS&lt;br&gt;还有一点需要强调，RPN 计算损失的时候没有NMS&lt;br&gt;&amp;nbsp;而是对带0和1标签的样本进行了损失的计算&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Tahoma;fontStyle=1;" parent="1" vertex="1">
+        <mxCell id="iZZFebuZpYIs87GABAeR-4" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;d2 modeling proposal_generator prpposal_utils.py 122&lt;br&gt;batched_nms&lt;br&gt;先计算损失，再NMS&lt;br&gt;这里的NMS有点特殊，RPN的分数是直接使用未激活的&lt;br&gt;RPN使用原本的NMS，但是ROI的使用自定义的NMS&lt;br&gt;还有一点需要强调，RPN 计算损失的时候没有NMS&lt;br&gt;&amp;nbsp;而是对带0和1标签的样本进行了损失的计算&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontStyle=0;" parent="1" vertex="1">
           <mxGeometry x="88" y="390" width="514" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="iZZFebuZpYIs87GABAeR-7" value="RPN" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Tahoma;fontSize=27;fontStyle=1" parent="1" vertex="1">
+        <mxCell id="iZZFebuZpYIs87GABAeR-7" value="RPN" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontSize=27;fontStyle=0" parent="1" vertex="1">
           <mxGeometry x="315" y="50" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="iZZFebuZpYIs87GABAeR-8" value="" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Tahoma;fontSize=18;" parent="1" vertex="1">
-          <mxGeometry x="666" y="20" width="520" height="1820" as="geometry" />
+        <mxCell id="iZZFebuZpYIs87GABAeR-8" value="" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=18;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="666" y="20" width="520" height="1750" as="geometry" />
         </mxCell>
-        <mxCell id="iZZFebuZpYIs87GABAeR-9" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;ubteacher modeling roi_heads&amp;nbsp;&lt;br&gt;输入2000个经过NMS之后的proposals&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Tahoma;fontStyle=1;" parent="1" vertex="1">
+        <mxCell id="iZZFebuZpYIs87GABAeR-9" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;ubteacher modeling roi_heads&amp;nbsp;&lt;br&gt;输入2000个经过NMS之后的proposals&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontStyle=0;" parent="1" vertex="1">
           <mxGeometry x="761" y="101" width="335" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="iZZFebuZpYIs87GABAeR-10" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;ubteacher modeling roi_heads 83行&lt;/span&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;br&gt;label_and_sample_proposals&lt;br&gt;对2000个proposals 取样512个&lt;br&gt;128个正样本 384个负样本&lt;br&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Tahoma;fontStyle=1;" parent="1" vertex="1">
+        <mxCell id="iZZFebuZpYIs87GABAeR-10" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;ubteacher modeling roi_heads 83行&lt;/span&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;br&gt;label_and_sample_proposals&lt;br&gt;对2000个proposals 取样512个&lt;br&gt;128个正样本 384个负样本&lt;br&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontStyle=0;" parent="1" vertex="1">
           <mxGeometry x="736" y="221" width="390" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="iZZFebuZpYIs87GABAeR-13" value="ROI" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Tahoma;fontSize=27;fontStyle=1" parent="1" vertex="1">
+        <mxCell id="iZZFebuZpYIs87GABAeR-13" value="ROI" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontSize=27;fontStyle=0" parent="1" vertex="1">
           <mxGeometry x="896" y="50" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="iZZFebuZpYIs87GABAeR-14" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;ubteacher modeling roi_heads 164行&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;self.proposal_matcher(match_quality_matrix)&lt;br&gt;计算和Ground truth IOU, 值大于0.5的作为正样本&lt;br&gt;&lt;font color=&quot;#ff3333&quot;&gt;RPN 和 ROI 都有采样的做法&lt;br&gt;但是RPN是阈值设为0.7 计算损失&lt;br&gt;ROI 是设置0.5作为阈值&lt;br&gt;&lt;/font&gt;返回的参数分别包括IOU最大的ID，以及正负样本的标签&lt;br&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Tahoma;fontStyle=1;" parent="1" vertex="1">
+        <mxCell id="iZZFebuZpYIs87GABAeR-14" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;ubteacher modeling roi_heads 164行&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;self.proposal_matcher(match_quality_matrix)&lt;br&gt;计算和Ground truth IOU, 值大于0.5的作为正样本&lt;br&gt;&lt;font color=&quot;#ff3333&quot;&gt;RPN 和 ROI 都有采样的做法&lt;br&gt;但是RPN是阈值设为0.7 计算损失&lt;br&gt;ROI 是设置0.5作为阈值&lt;br&gt;&lt;/font&gt;返回的参数分别包括IOU最大的ID，以及正负样本的标签&lt;br&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontStyle=0;" parent="1" vertex="1">
           <mxGeometry x="696" y="351" width="470" height="169" as="geometry" />
         </mxCell>
-        <mxCell id="iZZFebuZpYIs87GABAeR-15" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;ubteacher modeling roi_heads 167行&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;self._sample_proposals()&lt;br&gt;从正样本中挑选128个作为正样本&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;从负样本中挑选384个作为负样本&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Tahoma;fontStyle=1;" parent="1" vertex="1">
+        <mxCell id="iZZFebuZpYIs87GABAeR-15" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;ubteacher modeling roi_heads 167行&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;self._sample_proposals()&lt;br&gt;从正样本中挑选128个作为正样本&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;从负样本中挑选384个作为负样本&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontStyle=0;" parent="1" vertex="1">
           <mxGeometry x="698.5" y="540" width="470" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="iZZFebuZpYIs87GABAeR-16" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;ubteacher modeling roi_heads 180行&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;proposals_per_image.set&lt;br&gt;将gt_boxes 加到proposal中去&lt;br&gt;返回512个proposals&lt;br&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Tahoma;fontStyle=1;" parent="1" vertex="1">
+        <mxCell id="iZZFebuZpYIs87GABAeR-16" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;ubteacher modeling roi_heads 180行&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;proposals_per_image.set&lt;br&gt;将gt_boxes 加到proposal中去&lt;br&gt;返回512个proposals&lt;br&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontStyle=0;" parent="1" vertex="1">
           <mxGeometry x="696" y="690" width="470" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="iZZFebuZpYIs87GABAeR-17" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;ubteacher modeling roi_heads 103行&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;self._forward_box&lt;/span&gt;&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Tahoma;fontStyle=1;" parent="1" vertex="1">
+        <mxCell id="iZZFebuZpYIs87GABAeR-17" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;ubteacher modeling roi_heads 103行&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;self._forward_box&lt;/span&gt;&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontStyle=0;" parent="1" vertex="1">
           <mxGeometry x="698.5" y="840" width="470" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="iZZFebuZpYIs87GABAeR-18" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;ubteacher modeling roi_heads 103行&lt;br&gt;self.box_pooler&lt;br&gt;self.box_head&lt;br&gt;self.box_predictor&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Tahoma;fontStyle=1;" parent="1" vertex="1">
+        <mxCell id="iZZFebuZpYIs87GABAeR-18" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;ubteacher modeling roi_heads 103行&lt;br&gt;self.box_pooler&lt;br&gt;self.box_head&lt;br&gt;self.box_predictor&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontStyle=0;" parent="1" vertex="1">
           <mxGeometry x="693.49" y="990" width="470" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="iZZFebuZpYIs87GABAeR-19" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;ubteacher modeling roi_heads fast_rcnn 245行&lt;br&gt;&lt;/span&gt;&lt;p&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;计算512个proposal的类别分数&lt;/font&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Tahoma;fontStyle=1;" parent="1" vertex="1">
+        <mxCell id="iZZFebuZpYIs87GABAeR-19" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;ubteacher modeling roi_heads fast_rcnn 245行&lt;br&gt;&lt;/span&gt;&lt;p&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;计算512个proposal的类别分数&lt;/font&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontStyle=0;" parent="1" vertex="1">
           <mxGeometry x="693.5" y="1280" width="470" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="iZZFebuZpYIs87GABAeR-20" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;ubteacher modeling roi_heads 128行&lt;br&gt;self.box_pooler&lt;br&gt;self.box_head&lt;br&gt;self.box_predictor&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Tahoma;fontStyle=1;" parent="1" vertex="1">
+        <mxCell id="iZZFebuZpYIs87GABAeR-20" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;ubteacher modeling roi_heads 128行&lt;br&gt;self.box_pooler&lt;br&gt;self.box_head&lt;br&gt;self.box_predictor&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontStyle=0;" parent="1" vertex="1">
           <mxGeometry x="693.49" y="1140" width="470" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="iZZFebuZpYIs87GABAeR-21" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;ubteacher modeling roi_heads fast_rcnn 128行&lt;br&gt;&lt;/span&gt;&lt;p&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;计算512个proposal中正样本的回归损失&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;那么就是说ROI计算损失的时候依然用不到NMS&lt;/font&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Tahoma;fontStyle=1;" parent="1" vertex="1">
+        <mxCell id="iZZFebuZpYIs87GABAeR-21" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;ubteacher modeling roi_heads fast_rcnn 128行&lt;br&gt;&lt;/span&gt;&lt;p&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;计算512个proposal中正样本的回归损失&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;那么就是说ROI计算损失的时候依然用不到NMS&lt;/font&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontStyle=0;" parent="1" vertex="1">
           <mxGeometry x="698.5" y="1430" width="470" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="iZZFebuZpYIs87GABAeR-22" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;ubteacher modeling roi_heads 103行&lt;br&gt;self.box_pooler&lt;br&gt;self.box_head&lt;br&gt;self.box_predictor&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Tahoma;fontStyle=1;" parent="1" vertex="1">
+        <mxCell id="iZZFebuZpYIs87GABAeR-22" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;ubteacher modeling roi_heads 103行&lt;br&gt;self.box_pooler&lt;br&gt;self.box_head&lt;br&gt;self.box_predictor&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontStyle=0;" parent="1" vertex="1">
           <mxGeometry x="698.5" y="1580" width="470" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="iZZFebuZpYIs87GABAeR-23" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;font color=&quot;#ff6666&quot;&gt;总结一下，proposal和roi在计算损失的时候都不会用到NMS，而proposal在给roi提供proposal的时候用到了&lt;br&gt;并且teacher模型给student模型提供伪标签用到了&lt;br&gt;在模型最后的计算map时用到了&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Tahoma;fontStyle=1;" parent="1" vertex="1">
+        <mxCell id="iZZFebuZpYIs87GABAeR-23" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;font color=&quot;#ff6666&quot;&gt;总结一下，proposal和roi在计算损失的时候都不会用到NMS，而proposal在给roi提供proposal的时候用到了&lt;br&gt;并且teacher模型给student模型提供伪标签用到了&lt;br&gt;在模型最后的计算map时用到了&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontStyle=0;" parent="1" vertex="1">
           <mxGeometry x="98" y="620" width="514" height="160" as="geometry" />
         </mxCell>
       </root>
