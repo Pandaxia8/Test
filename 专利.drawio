@@ -1,11 +1,17 @@
-<mxfile host="app.diagrams.net" modified="2023-11-08T06:11:04.192Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0" etag="P658a4IIujxU59c0mKSm" version="22.0.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-08T06:13:41.859Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0" etag="TG0v5T-Y2Cnu7krgsVZV" version="22.0.8" type="github">
   <diagram name="第 1 页" id="w7pNRhOZ1t-Kfgztx5y0">
     <mxGraphModel dx="1130" dy="595" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="KV8OidlEBH9nYD2PxWSV-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="KV8OidlEBH9nYD2PxWSV-1" target="KV8OidlEBH9nYD2PxWSV-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="KV8OidlEBH9nYD2PxWSV-1" value="预训练阶段" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="450" y="140" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KV8OidlEBH9nYD2PxWSV-2" value="获取一个基本可用的目标检测模型（student）&lt;br&gt;并且将模型的权重直接复制到teacher模型中&lt;br&gt;student模型可以正常的反向传播" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="80" y="140" width="280" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
