@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-11-15T12:50:14.872Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0" etag="74EzNUub2HyF-jw20Sbc" version="22.1.1" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-15T12:50:53.340Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0" etag="oG2ABDxx8Ogv2XMrmAGY" version="22.1.1" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="3204" dy="1265" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="4392" dy="1898" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -329,8 +329,8 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="wBwmX6nGh7LynTAwKtqd-157" value="系统异常体系" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="-410" y="20" width="120" height="40" as="geometry" />
+        <mxCell id="wBwmX6nGh7LynTAwKtqd-157" value="系统异常体系" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fontStyle=1;fillColor=#FF0000;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-410" y="10" width="120" height="50" as="geometry" />
         </mxCell>
         <mxCell id="wBwmX6nGh7LynTAwKtqd-173" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="wBwmX6nGh7LynTAwKtqd-164" target="wBwmX6nGh7LynTAwKtqd-169">
           <mxGeometry relative="1" as="geometry" />
@@ -368,7 +368,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="wBwmX6nGh7LynTAwKtqd-164" value="基础异常码接口" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#FF6666;strokeColor=#b85450;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="wBwmX6nGh7LynTAwKtqd-164" value="基础异常码接口" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#FF9999;strokeColor=#b85450;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="-220" y="140" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="wBwmX6nGh7LynTAwKtqd-187" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="wBwmX6nGh7LynTAwKtqd-169" target="wBwmX6nGh7LynTAwKtqd-184">
@@ -424,7 +424,7 @@
             <Array as="points" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="wBwmX6nGh7LynTAwKtqd-190" value="传入&lt;br&gt;基础异常码接口&lt;br&gt;类型，可以同时接收不同的异常码" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#FF6666;strokeColor=#b85450;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="wBwmX6nGh7LynTAwKtqd-190" value="传入&lt;br&gt;基础异常码接口&lt;br&gt;类型，可以同时接收不同的异常码" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#FF9999;strokeColor=#b85450;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="-470" y="355" width="120" height="70" as="geometry" />
         </mxCell>
         <mxCell id="wBwmX6nGh7LynTAwKtqd-202" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="wBwmX6nGh7LynTAwKtqd-193" target="wBwmX6nGh7LynTAwKtqd-198">
