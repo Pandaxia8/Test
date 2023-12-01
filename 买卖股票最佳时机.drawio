@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-12-01T08:49:52.991Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0" etag="vslIMotoO2IdKR77y5ME" version="22.1.5" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-01T10:01:32.849Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0" etag="MSHTNgUmH7GXZWLL-gmh" version="22.1.5" type="github">
   <diagram name="第 1 页" id="FndrSQexR5jKtrGR9ax5">
     <mxGraphModel dx="679" dy="361" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" math="0" shadow="0">
       <root>
@@ -28,7 +28,7 @@
         <mxCell id="HbMu7OYQnipkmE7U60NW-9" value="不做事情：dp(i,1) = dp(i-1,1)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="291" y="505" width="230" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="HbMu7OYQnipkmE7U60NW-10" value="卖出：dp(i,0) = dp(i-1,1) + prices[i]" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="HbMu7OYQnipkmE7U60NW-10" value="卖出：dp(i,1) = dp(i+1,0) + prices[i]" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="456" y="407" width="230" height="30" as="geometry" />
         </mxCell>
         <mxCell id="HbMu7OYQnipkmE7U60NW-11" value="" style="curved=1;endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
@@ -56,7 +56,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="HbMu7OYQnipkmE7U60NW-18" value="买入：dp(i,1) = dp(i-1,0) - prices[i]" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="HbMu7OYQnipkmE7U60NW-18" value="买入：dp(i,0) = dp(i+1,1) - prices[i]" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="456" y="346" width="230" height="30" as="geometry" />
         </mxCell>
       </root>
