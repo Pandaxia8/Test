@@ -1,9 +1,64 @@
-<mxfile host="app.diagrams.net" modified="2023-12-01T08:44:07.412Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0" etag="06njB1aiIBoy97oR_Shr" version="22.1.5" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-01T08:49:32.810Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0" etag="xC9TxiCrNi9b1AjaPrE4" version="22.1.5" type="github">
   <diagram name="第 1 页" id="FndrSQexR5jKtrGR9ax5">
-    <mxGraphModel dx="983" dy="523" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" math="0" shadow="0">
+    <mxGraphModel dx="815" dy="434" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="HbMu7OYQnipkmE7U60NW-1" value="持有股票" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="357" y="362" width="98" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HbMu7OYQnipkmE7U60NW-2" value="未持有" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="686" y="362" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HbMu7OYQnipkmE7U60NW-3" value="假设dp(i,1)为当前持有股票获取的最大利益&lt;br&gt;假设dp(i,0)为当前未持有股票获取的最大利益" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="454" y="282" width="292" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="HbMu7OYQnipkmE7U60NW-7" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="HbMu7OYQnipkmE7U60NW-1" target="HbMu7OYQnipkmE7U60NW-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="455" y="385" as="sourcePoint" />
+            <mxPoint x="684" y="373" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HbMu7OYQnipkmE7U60NW-8" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;exitX=0;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="1" source="HbMu7OYQnipkmE7U60NW-2" target="HbMu7OYQnipkmE7U60NW-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="437" y="488" as="sourcePoint" />
+            <mxPoint x="667" y="488" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HbMu7OYQnipkmE7U60NW-9" value="不做事情：dp(i,1) = dp(i-1,1)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="291" y="505" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="HbMu7OYQnipkmE7U60NW-10" value="卖出：dp(i,0) = dp(i-1,1) + prices[i]" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="456" y="407" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="HbMu7OYQnipkmE7U60NW-11" value="" style="curved=1;endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="423" y="422" as="sourcePoint" />
+            <mxPoint x="387" y="425" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="436" y="475" />
+              <mxPoint x="403" y="513" />
+              <mxPoint x="370" y="474" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HbMu7OYQnipkmE7U60NW-16" value="不做事情：dp(i,0) = dp(i-1,0)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="616" y="505" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="HbMu7OYQnipkmE7U60NW-17" value="" style="curved=1;endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="748" y="422" as="sourcePoint" />
+            <mxPoint x="712" y="425" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="761" y="475" />
+              <mxPoint x="728" y="513" />
+              <mxPoint x="695" y="474" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HbMu7OYQnipkmE7U60NW-18" value="买入：dp(i,1) = dp(i-1,0) - prices[i]" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="456" y="346" width="230" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
