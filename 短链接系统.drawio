@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-12-03T13:39:49.616Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0" etag="XDr92P1vOB8HQqV0Df_i" version="22.1.5" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-03T13:40:34.030Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0" etag="WKR_hxpSNoJrjzuls1E0" version="22.1.5" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="9012" dy="4205" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="8061" dy="3699" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -858,7 +858,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="GYO95Bk0hF4-6fT0ZzWx-288" value="&lt;b&gt;数据回滚、抛出异常&lt;/b&gt;&lt;br&gt;这里是防止多个线程拿到&lt;b&gt;相同的&lt;/b&gt;，&lt;b&gt;并且不存在的Url&lt;/b&gt;&lt;br&gt;做新增操作" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="-2352" y="437.5" width="180" height="77.5" as="geometry" />
+          <mxGeometry x="-2392" y="436.25" width="180" height="77.5" as="geometry" />
         </mxCell>
         <mxCell id="GYO95Bk0hF4-6fT0ZzWx-289" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="GYO95Bk0hF4-6fT0ZzWx-284" target="GYO95Bk0hF4-6fT0ZzWx-288">
           <mxGeometry relative="1" as="geometry">
